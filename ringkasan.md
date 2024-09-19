@@ -72,7 +72,7 @@ Daftar library yang digunakan:
 | wincertstore                | 0.2                 |
 | WTForms                     | 3.0.1               |
 
-Testing dengan perintah ini bila tidak terjadi error maka libary sudah terinstall
+Jika tidak terjadi error saat menjalankan perintah ini, maka library telah terinstall dengan benar.
 
 <div style="text-align: center;">
     <img src="IMG/2.png" alt="Deskripsi Gambar" style="width: 70%;" />
