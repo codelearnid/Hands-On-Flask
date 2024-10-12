@@ -1,124 +1,123 @@
 #####################################
-#### Numbers and more in Python! ####
+#### Angka dan lebih di Python! ####
 #####################################
 
-# In this lecture, we will learn about numbers in Python and how to use them.
+# Dalam kuliah ini, kita akan belajar tentang angka di Python dan cara menggunakannya.
 #
-# We'll learn about the following topics:
+# Kita akan belajar tentang topik berikut:
 #
-#     1.) Types of Numbers in Python
-#     2.) Basic Arithmetic
-#     3.) Differences between Python 2 vs 3 in division
-#     4.) Object Assignment in Python
+#     1.) Jenis Angka di Python
+#     2.) Aritmatika Dasar
+#     3.) Perbedaan antara Python 2 vs 3 dalam pembagian
+#     4.) Penugasan Objek di Python
 
-# Types of numbers
+# Jenis angka
 #
-# Python has various "types" of numbers (numeric literals). We'll mainly focus on
-# integers and floating point numbers.
+# Python memiliki berbagai "jenis" angka (literal numerik). Kita akan fokus terutama pada
+# bilangan bulat dan bilangan pecahan.
 #
-# Integers are just whole numbers, positive or negative. For example: 2 and -2 are
-#  examples of integers.
+# Bilangan bulat hanyalah angka bulat, positif atau negatif. Misalnya: 2 dan -2 adalah
+# contoh bilangan bulat.
 #
-# Floating point numbers in Python are notable because they have a decimal point
-# in them, or use an exponential (e) to define the number. For example 2.0 and -2.1
-# are examples of floating point numbers. 4E2 (4 times 10 to the power of 2) is
-# also an example of a floating point number in Python.
+# Bilangan pecahan dalam Python menonjol karena memiliki titik desimal
+# di dalamnya, atau menggunakan eksponensial (e) untuk mendefinisikan angka. Misalnya 2.0 dan -2.1
+# adalah contoh bilangan pecahan. 4E2 (4 kali 10 pangkat 2) juga merupakan contoh bilangan pecahan di Python.
 #
-# Throughout this course we will be mainly working with
-# integers or simple float number types.
+# Sepanjang kursus ini, kita akan terutama bekerja dengan
+# bilangan bulat atau jenis bilangan pecahan sederhana.
 
 
-# Now let's start with some basic arithmetic.
+# Sekarang mari kita mulai dengan beberapa aritmatika dasar.
 
-# Basic Arithmetic
-# Addition
+# Aritmatika Dasar
+# Penambahan
 2+1
 
-# Subtraction
+# Pengurangan
 2-1
 
-# Multiplication
+# Perkalian
 2*2
 
 
-# Division
+# Pembagian
 3/2
 
-# Powers
+# Pangkat
 2**3
 
-# Can also do roots this way
+# Juga bisa melakukan akar dengan cara ini
 4**0.5
 
-# Order of Operations followed in Python
+# Urutan Operasi yang diikuti di Python
 2 + 10 * 10 + 3
 
-# Can use parenthesis to specify orders
+# Bisa menggunakan tanda kurung untuk menentukan urutan
 (2+10) * (10+3)
 
 
-## Variable Assignments
+## Penugasan Variabel
 #
-# Now that we've seen how to use numbers in Python as a calculator let's see how
-# we can assign names and create variables.
+# Sekarang setelah kita melihat cara menggunakan angka di Python sebagai kalkulator, mari kita lihat bagaimana
+# kita bisa menetapkan nama dan membuat variabel.
 #
-# We use a single equals sign to assign labels to variables.
-# You also don't need to specify the keyword var.
-# Let's see a few examples of how we can do this.
+# Kita menggunakan tanda sama dengan tunggal untuk menetapkan label ke variabel.
+# Anda juga tidak perlu menentukan kata kunci var.
+# Mari kita lihat beberapa contoh bagaimana kita bisa melakukannya.
 
-# Let's create an object called "a" and assign it the number 5
+# Mari buat objek bernama "a" dan tetapkan angka 5 kepadanya
 a = 5
 
-# Now if I call a in my Python script, Python will treat it as the number 5.
+# Sekarang jika saya memanggil a dalam skrip Python saya, Python akan memperlakukannya sebagai angka 5.
 
-# Adding the objects
+# Menambahkan objek
 a+a
 
-# What happens on reassignment? Will Python let us write it over?
+# Apa yang terjadi pada penugasan ulang? Apakah Python membiarkan kita menulisnya lagi?
 
-# Reassignment
+# Penugasan Ulang
 a = 10
 
-# Check
+# Periksa
 a
 
 
-# Yes! Python allows you to write over assigned variable names. We can also use
-# the variables themselves when doing the reassignment. Here is an example of what I mean:
+# Ya! Python memungkinkan Anda menulis ulang nama variabel yang ditugaskan. Kita juga bisa menggunakan
+# variabel itu sendiri saat melakukan penugasan ulang. Berikut adalah contoh dari apa yang saya maksud:
 
-# Check
+# Periksa
 a
 
-# Use A to redefine A
+# Gunakan A untuk mendefinisikan ulang A
 a = a + a
 
-# Check
+# Periksa
 a
 
 
-# The names you use when creating these labels need to follow a few rules:
+# Nama yang Anda gunakan saat membuat label ini perlu mengikuti beberapa aturan:
 #
-#     1. Names can not start with a number.
-#     2. There can be no spaces in the name, use _ instead.
-#     3. Can't use any of these symbols :'",<>/?|\()!@#$%^&*~-+
-#     3. It's considered best practice (PEP8) that the names are lowercase.
+#     1. Nama tidak boleh dimulai dengan angka.
+#     2. Tidak boleh ada spasi dalam nama, gunakan _ sebagai gantinya.
+#     3. Tidak boleh menggunakan salah satu simbol ini :'",<>/?|\()!@#$%^&*~-+
+#     3. Dikatakan praktik terbaik (PEP8) bahwa nama-nama itu huruf kecil.
 #
-# Using variable names can be a very useful way to keep track of different
-# variables in Python. For example:
+# Menggunakan nama variabel bisa menjadi cara yang sangat berguna untuk melacak berbagai
+# variabel di Python. Misalnya:
 
-# Use object names to keep better track of what's going on in your code!
+# Gunakan nama objek untuk lebih memahami apa yang terjadi dalam kode Anda!
 puppies = 6
 
 weight = 2
 
 total_weight = puppies*weight
 
-# Show my total_weight
+# Tampilkan total_weight saya
 total_weight
 
 
-# So what have we learned? We learned some of the basics of numbers in Python.
-# We also learned how to do arithmetic and use Python as a basic calculator.
-# We then wrapped it up with learning about Variable Assignment in Python.
+# Jadi apa yang telah kita pelajari? Kita belajar beberapa dasar angka di Python.
+# Kita juga belajar cara melakukan aritmatika dan menggunakan Python sebagai kalkulator dasar.
+# Kita kemudian mengakhiri dengan belajar tentang Penugasan Variabel di Python.
 #
-# Up next we'll learn about Strings!
+# Selanjutnya kita akan belajar tentang String!
