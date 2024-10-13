@@ -1,17 +1,15 @@
-# HTML (HyperText Markup Language)
+# HTML (*HyperText Markup Language*)
 
 **HTML** (*HyperText Markup Language*) adalah bahasa markup standar yang digunakan untuk membuat dan menyusun halaman web. HTML berfungsi sebagai dasar dari setiap halaman web, di mana ia mengatur struktur dan konten halaman tersebut. Elemen-elemen HTML berupa tag yang digunakan untuk mendefinisikan berbagai bagian dari halaman, seperti judul, paragraf, gambar, tautan, tabel, dan lain-lain.
 
 Berikut beberapa poin penting tentang HTML:
+
 1. **Markup Language**: HTML adalah bahasa markup, artinya tidak melakukan perhitungan atau eksekusi logika seperti bahasa pemrograman, tetapi digunakan untuk menandai atau menstrukturkan konten pada halaman web.
-   
 2. **Tag HTML**: HTML menggunakan tag untuk membungkus konten. Sebagian besar tag memiliki pasangan pembuka (`<tag>`) dan penutup (`</tag>`), seperti `<p>` untuk paragraf atau `<h1>` untuk judul utama. Ada juga tag yang tidak memiliki penutup, seperti `<img>` untuk gambar.
-
 3. **HyperText**: HTML memungkinkan untuk menyertakan **hyperlink** yang dapat menghubungkan satu halaman dengan halaman lainnya, baik di dalam situs web yang sama atau di situs web berbeda.
-
 4. **Elemen HTML**: Setiap tag HTML biasanya menyertakan **atribut** yang menyediakan informasi tambahan tentang elemen tersebut. Misalnya, tag `<img>` membutuhkan atribut `src` yang mendefinisikan sumber gambar.
-
 5. **Struktur Dasar HTML**: Setiap dokumen HTML dimulai dengan deklarasi `<!DOCTYPE html>` dan memiliki struktur dasar seperti:
+
    ```html
    <!DOCTYPE html>
    <html>
@@ -24,7 +22,6 @@ Berikut beberapa poin penting tentang HTML:
      </body>
    </html>
    ```
-
 6. **Browser**: Browser web seperti Google Chrome, Mozilla Firefox, dan Microsoft Edge menampilkan halaman web berdasarkan kode HTML yang ditulis oleh pengembang. Mereka membaca dan merender HTML untuk menampilkan elemen visual yang dilihat oleh pengguna.
 
 **Kesimpulan:**
@@ -35,14 +32,16 @@ HTML adalah pondasi dari halaman web yang menentukan bagaimana konten ditampilka
 **Basic Tagging** dalam HTML mengacu pada penggunaan tag-tag dasar yang paling umum dan penting untuk membuat struktur halaman web. Tag HTML ini menentukan bagaimana elemen-elemen pada halaman web diatur dan ditampilkan oleh browser. Berikut adalah beberapa tag HTML dasar beserta fungsinya:
 
 ### 1. **Tag Struktur Dasar HTML**
-   - `<!DOCTYPE html>`: Menentukan tipe dokumen HTML yang digunakan (HTML5).
-   - `<html>`: Tag utama yang membungkus seluruh dokumen HTML.
-   - `<head>`: Bagian ini berisi metadata (informasi tentang dokumen) seperti judul halaman dan link ke file CSS atau JavaScript.
-   - `<title>`: Menentukan judul halaman yang ditampilkan di tab browser.
-   - `<body>`: Bagian yang berisi konten yang akan terlihat di halaman web.
+
+- `<!DOCTYPE html>`: Menentukan tipe dokumen HTML yang digunakan (HTML5).
+- `<html>`: Tag utama yang membungkus seluruh dokumen HTML.
+- `<head>`: Bagian ini berisi metadata (informasi tentang dokumen) seperti judul halaman dan link ke file CSS atau JavaScript.
+- `<title>`: Menentukan judul halaman yang ditampilkan di tab browser.
+- `<body>`: Bagian yang berisi konten yang akan terlihat di halaman web.
 
    Contoh:
-   ```html
+
+```html
    <!DOCTYPE html>
    <html>
      <head>
@@ -52,61 +51,75 @@ HTML adalah pondasi dari halaman web yang menentukan bagaimana konten ditampilka
        <!-- Konten halaman -->
      </body>
    </html>
-   ```
+```
 
 ### 2. **Tag Heading (Judul)**
+
    Tag heading digunakan untuk menentukan judul atau subjudul pada halaman web. Ada 6 level heading, dari `<h1>` hingga `<h6>`, di mana `<h1>` adalah yang paling besar (judul utama), dan `<h6>` paling kecil (subjudul kecil).
-   - `<h1>` hingga `<h6>`: Untuk judul dan subjudul.
-   
+
+- `<h1>` hingga `<h6>`: Untuk judul dan subjudul.
+
    Contoh:
-   ```html
+
+```html
    <h1>Judul Utama</h1>
    <h2>Subjudul Tingkat 2</h2>
-   ```
+```
 
 ### 3. **Tag Paragraf**
-   - `<p>`: Digunakan untuk membuat paragraf teks.
-   
+
+- `<p>`: Digunakan untuk membuat paragraf teks.
+
    Contoh:
-   ```html
+
+```html
    <p>Ini adalah sebuah paragraf teks.</p>
-   ```
+```
 
 ### 4. **Tag Teks Format**
+
    Tag ini digunakan untuk memformat teks dalam dokumen.
-   - `<b>` atau `<strong>`: Membuat teks tebal.
-   - `<i>` atau `<em>`: Membuat teks miring.
-   - `<u>`: Membuat teks bergaris bawah.
-   - `<br>`: Membuat baris baru (line break).
+
+- `<b>` atau `<strong>`: Membuat teks tebal.
+- `<i>` atau `<em>`: Membuat teks miring.
+- `<u>`: Membuat teks bergaris bawah.
+- `<br>`: Membuat baris baru (line break).
 
    Contoh:
-   ```html
+
+```html
    <p><strong>Ini teks tebal</strong> dan <em>ini teks miring</em>.</p>
-   ```
+```
 
 ### 5. **Tag Link (Hyperlink)**
-   - `<a>`: Digunakan untuk membuat hyperlink. Atribut `href` menentukan tujuan tautan.
-   
+
+- `<a>`: Digunakan untuk membuat hyperlink. Atribut `href` menentukan tujuan tautan.
+
    Contoh:
-   ```html
+
+```html
    <a href="https://www.example.com">Kunjungi Website</a>
-   ```
+```
 
 ### 6. **Tag Gambar**
-   - `<img>`: Digunakan untuk menampilkan gambar. Atribut `src` menentukan sumber gambar dan `alt` berfungsi sebagai teks alternatif jika gambar tidak bisa ditampilkan.
-   
+
+- `<img>`: Digunakan untuk menampilkan gambar. Atribut `src` menentukan sumber gambar dan `alt` berfungsi sebagai teks alternatif jika gambar tidak bisa ditampilkan.
+
    Contoh:
-   ```html
+
+```html
    <img src="gambar.jpg" alt="Deskripsi gambar">
-   ```
+```
 
 ### 7. **Tag Daftar (List)**
-   - `<ul>`: Membuat daftar tidak berurutan (unordered list).
-   - `<ol>`: Membuat daftar berurutan (ordered list).
-   - `<li>`: Item dalam daftar.
+
+- `<ul>`: Membuat daftar tidak berurutan (unordered list).
+- `<ol>`: Membuat daftar berurutan (ordered list).
+- `<li>`: Item dalam daftar.
 
    Contoh:
-   ```html
+
+```html
    <ul>
      <li>Item 1</li>
      <li>Item 2</li>
@@ -116,17 +129,20 @@ HTML adalah pondasi dari halaman web yang menentukan bagaimana konten ditampilka
      <li>Item Pertama</li>
      <li>Item Kedua</li>
    </ol>
-   ```
+```
 
 ### 8. **Tag Tabel**
+
    Tag yang digunakan untuk membuat tabel:
-   - `<table>`: Membuat tabel.
-   - `<tr>`: Membuat baris dalam tabel.
-   - `<th>`: Membuat header kolom tabel (biasanya teks di-bold).
-   - `<td>`: Membuat sel (cell) data dalam tabel.
+
+- `<table>`: Membuat tabel.
+- `<tr>`: Membuat baris dalam tabel.
+- `<th>`: Membuat header kolom tabel (biasanya teks di-bold).
+- `<td>`: Membuat sel (cell) data dalam tabel.
 
    Contoh:
-   ```html
+
+```html
    <table>
      <tr>
        <th>Nama</th>
@@ -141,22 +157,25 @@ HTML adalah pondasi dari halaman web yang menentukan bagaimana konten ditampilka
        <td>30</td>
      </tr>
    </table>
-   ```
+```
 
 ### 9. **Tag Div dan Span**
-   - `<div>`: Digunakan untuk membuat blok container yang dapat menampung elemen lain (biasanya untuk pengaturan layout).
-   - `<span>`: Digunakan untuk membungkus bagian kecil dari teks atau elemen inline (untuk styling tertentu).
+
+- `<div>`: Digunakan untuk membuat blok container yang dapat menampung elemen lain (biasanya untuk pengaturan layout).
+- `<span>`: Digunakan untuk membungkus bagian kecil dari teks atau elemen inline (untuk styling tertentu).
 
    Contoh:
-   ```html
+
+```html
    <div>
      <p>Ini dalam div.</p>
    </div>
    
    <span>Ini teks di dalam span.</span>
-   ```
+```
 
 ### Kesimpulan:
+
 **Basic tagging** mengacu pada penggunaan tag-tag dasar HTML untuk membentuk struktur dan konten halaman web. Dengan memahami dan menguasai tag dasar ini, Anda dapat membuat halaman web yang terstruktur dengan baik dan dapat ditampilkan dengan benar oleh browser.
 
 ## HTML List
@@ -164,89 +183,106 @@ HTML adalah pondasi dari halaman web yang menentukan bagaimana konten ditampilka
 Dalam HTML, **list** (daftar) digunakan untuk menampilkan kumpulan item secara berurutan atau tidak berurutan. Ada tiga jenis utama list yang sering digunakan:
 
 ### 1. **Unordered List (Daftar Tidak Berurutan)**
+
    Daftar ini menampilkan item tanpa urutan tertentu. Setiap item ditandai dengan simbol seperti bullet (•).
-   
-   - **Tag Utama**: `<ul>` (unordered list)
-   - **Item Daftar**: `<li>` (list item)
+
+- **Tag Utama**: `<ul>` (unordered list)
+- **Item Daftar**: `<li>` (list item)
 
    **Contoh**:
-   ```html
+
+```html
    <ul>
      <li>Item 1</li>
      <li>Item 2</li>
      <li>Item 3</li>
    </ul>
-   ```
+```
+
    **Hasilnya**:
-   - Item 1
-   - Item 2
-   - Item 3
+
+- Item 1
+- Item 2
+- Item 3
 
 ### 2. **Ordered List (Daftar Berurutan)**
+
    Daftar ini menampilkan item dengan urutan numerik atau alfabet. Setiap item diberi nomor atau huruf secara otomatis.
-   
-   - **Tag Utama**: `<ol>` (ordered list)
-   - **Item Daftar**: `<li>` (list item)
+
+- **Tag Utama**: `<ol>` (ordered list)
+- **Item Daftar**: `<li>` (list item)
 
    **Contoh**:
-   ```html
+
+```html
    <ol>
      <li>Item 1</li>
      <li>Item 2</li>
      <li>Item 3</li>
    </ol>
-   ```
+```
+
    **Hasilnya**:
-   1. Item 1
-   2. Item 2
-   3. Item 3
+
+1. Item 1
+2. Item 2
+3. Item 3
 
    **Atribut Tipe Ordered List**:
    Anda dapat mengubah tipe penomoran menggunakan atribut `type` pada tag `<ol>`:
-   - `type="1"`: Urutan angka (default).
-   - `type="A"`: Urutan huruf besar (A, B, C).
-   - `type="a"`: Urutan huruf kecil (a, b, c).
-   - `type="I"`: Urutan angka Romawi besar (I, II, III).
-   - `type="i"`: Urutan angka Romawi kecil (i, ii, iii).
+
+- `type="1"`: Urutan angka (default).
+- `type="A"`: Urutan huruf besar (A, B, C).
+- `type="a"`: Urutan huruf kecil (a, b, c).
+- `type="I"`: Urutan angka Romawi besar (I, II, III).
+- `type="i"`: Urutan angka Romawi kecil (i, ii, iii).
 
    **Contoh dengan atribut type**:
-   ```html
+
+```html
    <ol type="A">
      <li>Item 1</li>
      <li>Item 2</li>
      <li>Item 3</li>
    </ol>
-   ```
+```
+
    **Hasilnya**:
-   A. Item 1  
-   B. Item 2  
+   A. Item 1
+   B. Item 2
    C. Item 3
 
 ### 3. **Definition List (Daftar Definisi)**
+
    Daftar ini digunakan untuk menampilkan istilah dan definisinya. Setiap istilah didefinisikan oleh sepasang tag `<dt>` dan `<dd>`.
-   
-   - **Tag Utama**: `<dl>` (definition list)
-   - **Istilah**: `<dt>` (definition term)
-   - **Definisi**: `<dd>` (definition description)
+
+- **Tag Utama**: `<dl>` (definition list)
+- **Istilah**: `<dt>` (definition term)
+- **Definisi**: `<dd>` (definition description)
 
    **Contoh**:
-   ```html
+
+```html
    <dl>
      <dt>HTML</dt>
      <dd>HyperText Markup Language, bahasa standar untuk membuat halaman web.</dd>
      <dt>CSS</dt>
      <dd>Cascading Style Sheets, digunakan untuk mendesain tampilan halaman web.</dd>
    </dl>
-   ```
+```
+
    **Hasilnya**:
-   - **HTML**: HyperText Markup Language, bahasa standar untuk membuat halaman web.
-   - **CSS**: Cascading Style Sheets, digunakan untuk mendesain tampilan halaman web.
+
+- **HTML**: HyperText Markup Language, bahasa standar untuk membuat halaman web.
+- **CSS**: Cascading Style Sheets, digunakan untuk mendesain tampilan halaman web.
 
 ### 4. **Nested List (Daftar Bersarang)**
+
    Anda juga dapat membuat daftar yang bersarang, yaitu daftar di dalam daftar. Ini bisa berupa kombinasi dari daftar terurut atau tidak terurut.
 
    **Contoh Nested List**:
-   ```html
+
+```html
    <ul>
      <li>Item 1
        <ul>
@@ -257,15 +293,18 @@ Dalam HTML, **list** (daftar) digunakan untuk menampilkan kumpulan item secara b
      <li>Item 2</li>
      <li>Item 3</li>
    </ul>
-   ```
+```
+
    **Hasilnya**:
-   - Item 1
-     - Subitem 1
-     - Subitem 2
-   - Item 2
-   - Item 3
+
+- Item 1
+  - Subitem 1
+  - Subitem 2
+- Item 2
+- Item 3
 
 ### Kesimpulan:
+
 HTML menyediakan berbagai jenis list untuk menampilkan informasi secara terstruktur, baik dalam urutan (ordered) maupun tanpa urutan (unordered). Dengan pemahaman tentang penggunaan tag seperti `<ul>`, `<ol>`, dan `<dl>`, Anda dapat membuat halaman web yang lebih teratur dan mudah dibaca.
 
 ## Divs Spans
@@ -273,43 +312,51 @@ HTML menyediakan berbagai jenis list untuk menampilkan informasi secara terstruk
 Dalam HTML, **`<div>`** dan **`<span>`** adalah dua elemen dasar yang digunakan untuk mengelompokkan konten atau elemen lain, tetapi mereka memiliki perbedaan utama dalam cara penggunaannya.
 
 ### 1. **`<div>`: Division or Block-Level Element**
-   - **Jenis Elemen**: Block-level
-   - **Fungsi**: Elemen `<div>` digunakan untuk membuat sebuah blok yang mengelompokkan konten atau elemen lain. Karena elemen ini adalah block-level, ia akan memulai baris baru dan memanjang selebar konten yang ada di dalamnya atau selebar halaman (default 100% lebar halaman).
-   - **Penggunaan**: Umumnya digunakan untuk membagi halaman menjadi bagian-bagian besar, seperti header, footer, section, atau container konten lainnya.
-   
+
+- **Jenis Elemen**: Block-level
+- **Fungsi**: Elemen `<div>` digunakan untuk membuat sebuah blok yang mengelompokkan konten atau elemen lain. Karena elemen ini adalah block-level, ia akan memulai baris baru dan memanjang selebar konten yang ada di dalamnya atau selebar halaman (default 100% lebar halaman).
+- **Penggunaan**: Umumnya digunakan untuk membagi halaman menjadi bagian-bagian besar, seperti header, footer, section, atau container konten lainnya.
+
    **Contoh Penggunaan**:
-   ```html
+
+```html
    <div>
      <h1>Ini adalah judul</h1>
      <p>Ini adalah paragraf dalam div.</p>
    </div>
-   ```
+```
 
    **Hasilnya**:
-   - `<div>` mengelompokkan elemen judul dan paragraf menjadi satu blok yang terpisah dari konten lain di halaman.
+
+- `<div>` mengelompokkan elemen judul dan paragraf menjadi satu blok yang terpisah dari konten lain di halaman.
 
 ### 2. **`<span>`: Span or Inline-Level Element**
-   - **Jenis Elemen**: Inline-level
-   - **Fungsi**: Elemen `<span>` digunakan untuk menandai atau membungkus bagian kecil dari teks atau konten inline. Karena elemen ini adalah inline-level, ia tidak memulai baris baru dan hanya memakan ruang selebar konten yang ada di dalamnya.
-   - **Penggunaan**: Biasanya digunakan untuk memformat teks atau mengelompokkan konten kecil dalam satu baris, seperti membuat bagian dari teks menjadi berwarna atau berbeda dari bagian lainnya.
+
+- **Jenis Elemen**: Inline-level
+- **Fungsi**: Elemen `<span>` digunakan untuk menandai atau membungkus bagian kecil dari teks atau konten inline. Karena elemen ini adalah inline-level, ia tidak memulai baris baru dan hanya memakan ruang selebar konten yang ada di dalamnya.
+- **Penggunaan**: Biasanya digunakan untuk memformat teks atau mengelompokkan konten kecil dalam satu baris, seperti membuat bagian dari teks menjadi berwarna atau berbeda dari bagian lainnya.
 
    **Contoh Penggunaan**:
-   ```html
+
+```html
    <p>Ini adalah <span style="color: red;">teks berwarna merah</span> dalam paragraf.</p>
-   ```
+```
 
    **Hasilnya**:
-   - `<span>` hanya memengaruhi teks "teks berwarna merah" tanpa memengaruhi elemen lain di paragraf.
+
+- `<span>` hanya memengaruhi teks "teks berwarna merah" tanpa memengaruhi elemen lain di paragraf.
 
 ### **Perbedaan Utama Antara `<div>` dan `<span>`**:
-|  **Aspek**             |  **`<div>`**                            |  **`<span>`**                            |
-|------------------------|-----------------------------------------|------------------------------------------|
-| **Tipe Elemen**         | Block-level                            | Inline-level                             |
-| **Memulai Baris Baru**  | Ya                                      | Tidak                                    |
-| **Penggunaan Umum**     | Untuk mengelompokkan elemen besar atau blok konten | Untuk memformat teks atau bagian kecil dari konten |
-| **Lebar Default**       | Mengisi lebar penuh elemen induk        | Hanya selebar konten di dalamnya         |
+
+| **Aspek**              | **`<div>`**                                | **`<span>`**                               |
+| ---------------------------- | -------------------------------------------------- | -------------------------------------------------- |
+| **Tipe Elemen**        | Block-level                                        | Inline-level                                       |
+| **Memulai Baris Baru** | Ya                                                 | Tidak                                              |
+| **Penggunaan Umum**    | Untuk mengelompokkan elemen besar atau blok konten | Untuk memformat teks atau bagian kecil dari konten |
+| **Lebar Default**      | Mengisi lebar penuh elemen induk                   | Hanya selebar konten di dalamnya                   |
 
 ### Contoh Penggunaan Bersama:
+
 Anda bisa menggunakan keduanya untuk tujuan tata letak dan pemformatan yang lebih baik.
 
 ```html
@@ -319,10 +366,12 @@ Anda bisa menggunakan keduanya untuk tujuan tata letak dan pemformatan yang lebi
   <p>Ini adalah <span style="color: blue;">teks berwarna biru</span> dalam paragraf.</p>
 </div>
 ```
+
 - **`<div>`** digunakan untuk membungkus seluruh konten, memberikan gaya blok, dan memastikan elemen di dalamnya terstruktur dalam satu grup.
 - **`<span>`** digunakan untuk membungkus teks yang diubah warna menjadi biru, tanpa mengganggu aliran paragraf.
 
 ### Kesimpulan:
+
 - **`<div>`** sangat cocok digunakan ketika Anda ingin mengelompokkan elemen secara blok dan membuat struktur tata letak halaman.
 - **`<span>`** cocok digunakan ketika Anda hanya ingin memformat bagian kecil dari teks atau elemen inline tanpa memengaruhi struktur keseluruhan halaman.
 
@@ -333,15 +382,19 @@ Keduanya sering digunakan bersama dalam pengembangan web untuk mengatur konten d
 **HTML Attributes** adalah informasi tambahan yang diberikan pada elemen HTML untuk mengubah atau menambahkan fitur tertentu pada elemen tersebut. Atribut ditambahkan di dalam tag pembuka elemen dan biasanya berfungsi untuk memberikan instruksi lebih lanjut kepada browser mengenai elemen tersebut.
 
 ### Struktur Atribut:
+
 Atribut HTML selalu ditulis dalam format:
+
 ```html
 <element attribute="value">Content</element>
 ```
+
 - **element**: Nama elemen HTML (misalnya, `<a>`, `<img>`, `<div>`).
 - **attribute**: Nama atribut (misalnya, `href`, `src`, `class`).
 - **value**: Nilai dari atribut (misalnya, URL, teks, atau nama class).
 
 ### Contoh Penggunaan Atribut:
+
 ```html
 <a href="https://www.example.com" target="_blank">Kunjungi Example</a>
 <img src="image.jpg" alt="Gambar Deskripsi">
@@ -349,96 +402,97 @@ Atribut HTML selalu ditulis dalam format:
 
 ### Beberapa Atribut HTML yang Paling Umum:
 
-1. **`href` (Hyperlink Reference)**  
-   - **Elemen yang Menggunakan**: `<a>`  
+1. **`href` (Hyperlink Reference)**
+
+   - **Elemen yang Menggunakan**: `<a>`
    - **Fungsi**: Menentukan URL atau tautan yang akan diarahkan ketika pengguna mengklik elemen tersebut.
    - **Contoh**:
      ```html
      <a href="https://www.example.com">Klik di sini</a>
      ```
+2. **`src` (Source)**
 
-2. **`src` (Source)**  
-   - **Elemen yang Menggunakan**: `<img>`, `<audio>`, `<video>`, `<iframe>`  
+   - **Elemen yang Menggunakan**: `<img>`, `<audio>`, `<video>`, `<iframe>`
    - **Fungsi**: Menentukan sumber file eksternal, seperti gambar, video, atau dokumen lain.
    - **Contoh**:
      ```html
      <img src="gambar.jpg" alt="Deskripsi gambar">
      ```
+3. **`alt` (Alternative Text)**
 
-3. **`alt` (Alternative Text)**  
-   - **Elemen yang Menggunakan**: `<img>`  
+   - **Elemen yang Menggunakan**: `<img>`
    - **Fungsi**: Menentukan teks alternatif jika gambar tidak dapat ditampilkan. Atribut ini juga penting untuk aksesibilitas.
    - **Contoh**:
      ```html
      <img src="gambar.jpg" alt="Deskripsi gambar">
      ```
+4. **`title`**
 
-4. **`title`**  
-   - **Elemen yang Menggunakan**: Semua elemen HTML  
+   - **Elemen yang Menggunakan**: Semua elemen HTML
    - **Fungsi**: Menyediakan informasi tambahan berupa teks tooltip yang akan ditampilkan ketika pengguna mengarahkan kursor pada elemen tersebut.
    - **Contoh**:
      ```html
      <p title="Ini adalah paragraf">Arahkan kursor untuk melihat tooltip.</p>
      ```
+5. **`class`**
 
-5. **`class`**  
-   - **Elemen yang Menggunakan**: Semua elemen HTML  
+   - **Elemen yang Menggunakan**: Semua elemen HTML
    - **Fungsi**: Memberi nama kelas yang dapat digunakan untuk memberikan gaya CSS pada elemen tertentu. Kelas dapat digunakan berkali-kali pada beberapa elemen.
    - **Contoh**:
      ```html
      <p class="text-utama">Ini adalah paragraf dengan class.</p>
      ```
+6. **`id`**
 
-6. **`id`**  
-   - **Elemen yang Menggunakan**: Semua elemen HTML  
+   - **Elemen yang Menggunakan**: Semua elemen HTML
    - **Fungsi**: Memberikan identitas unik pada elemen. Setiap elemen hanya boleh memiliki satu `id`, dan `id` tersebut harus unik di dalam dokumen.
    - **Contoh**:
      ```html
      <div id="header">Ini adalah header.</div>
      ```
+7. **`style`**
 
-7. **`style`**  
-   - **Elemen yang Menggunakan**: Semua elemen HTML  
+   - **Elemen yang Menggunakan**: Semua elemen HTML
    - **Fungsi**: Memberikan gaya inline langsung pada elemen menggunakan kode CSS. Namun, praktik yang disarankan adalah memisahkan CSS dari HTML (menggunakan file CSS eksternal).
    - **Contoh**:
      ```html
      <p style="color: red;">Ini adalah teks berwarna merah.</p>
      ```
+8. **`target`**
 
-8. **`target`**  
-   - **Elemen yang Menggunakan**: `<a>`, `<form>`  
+   - **Elemen yang Menggunakan**: `<a>`, `<form>`
    - **Fungsi**: Menentukan di mana halaman tautan akan dibuka. Nilai umum termasuk `_self` (default, membuka di tab saat ini) dan `_blank` (membuka di tab baru).
    - **Contoh**:
      ```html
      <a href="https://www.example.com" target="_blank">Buka di tab baru</a>
      ```
+9. **`disabled`**
 
-9. **`disabled`**  
-   - **Elemen yang Menggunakan**: Elemen form seperti `<input>`, `<button>`, `<select>`, `<textarea>`  
+   - **Elemen yang Menggunakan**: Elemen form seperti `<input>`, `<button>`, `<select>`, `<textarea>`
    - **Fungsi**: Menonaktifkan elemen input sehingga tidak dapat diinteraksi oleh pengguna.
    - **Contoh**:
      ```html
      <input type="text" disabled value="Tidak bisa diubah">
      ```
+10. **`placeholder`**
 
-10. **`placeholder`**  
-    - **Elemen yang Menggunakan**: `<input>`, `<textarea>`  
+    - **Elemen yang Menggunakan**: `<input>`, `<textarea>`
     - **Fungsi**: Menampilkan teks sementara di dalam kotak input yang menghilang saat pengguna mulai mengetik.
     - **Contoh**:
       ```html
       <input type="text" placeholder="Masukkan nama Anda">
       ```
+11. **`value`**
 
-11. **`value`**  
-    - **Elemen yang Menggunakan**: `<input>`, `<button>`, `<textarea>`  
+    - **Elemen yang Menggunakan**: `<input>`, `<button>`, `<textarea>`
     - **Fungsi**: Menentukan nilai awal elemen input atau tombol.
     - **Contoh**:
       ```html
       <input type="text" value="Teks Awal">
       ```
+12. **`maxlength`**
 
-12. **`maxlength`**  
-    - **Elemen yang Menggunakan**: `<input>`, `<textarea>`  
+    - **Elemen yang Menggunakan**: `<input>`, `<textarea>`
     - **Fungsi**: Menentukan jumlah karakter maksimal yang dapat dimasukkan pengguna ke dalam input.
     - **Contoh**:
       ```html
@@ -446,19 +500,27 @@ Atribut HTML selalu ditulis dalam format:
       ```
 
 ### Contoh Penggunaan Beberapa Atribut Bersama:
+
 ```html
 <a href="https://www.example.com" target="_blank" title="Buka contoh website">Kunjungi Example</a>
 <img src="gambar.jpg" alt="Gambar Deskripsi" style="border: 2px solid black;">
 ```
 
 ### Kesimpulan:
+
 Atribut HTML memberikan fleksibilitas untuk mengontrol bagaimana elemen HTML berfungsi dan ditampilkan. Dengan atribut, kita dapat menambahkan fungsionalitas, memanipulasi tampilan, dan memberikan informasi tambahan pada elemen di halaman web.
+
+### Tugas 1
+Tugas ini meminta Anda untuk membuat kode HTML sesuai contoh dibawah ini
+
+![Tugas 1](/00-html-css-bootstrap/01-HTML-Crash-Course/tugas1.png)
 
 ## Form Basics
 
 Dalam HTML, **form** (formulir) digunakan untuk mengumpulkan data dari pengguna dan mengirimkannya ke server untuk diproses. Formulir adalah elemen penting dalam interaksi pengguna dengan web, seperti login, pendaftaran, atau pencarian.
 
 ### Struktur Dasar Formulir
+
 Elemen `<form>` berfungsi sebagai wadah untuk elemen input, tombol, dan kontrol lain yang memungkinkan pengguna memasukkan dan mengirimkan data.
 
 ```html
@@ -475,6 +537,7 @@ Elemen `<form>` berfungsi sebagai wadah untuk elemen input, tombol, dan kontrol 
 ### Elemen Formulir Utama
 
 1. **Text Input (`<input type="text">`)**
+
    - Digunakan untuk input teks satu baris.
    - **Atribut Penting**:
      - `name`: Nama variabel yang akan dikirim ke server.
@@ -482,50 +545,55 @@ Elemen `<form>` berfungsi sebagai wadah untuk elemen input, tombol, dan kontrol 
      - `maxlength`: Jumlah maksimal karakter yang bisa diinput.
 
    **Contoh**:
+
    ```html
    <form>
      <label for="username">Username:</label>
      <input type="text" id="username" name="username" placeholder="Masukkan username">
    </form>
    ```
-
 2. **Password Input (`<input type="password">`)**
+
    - Digunakan untuk input kata sandi, karakter yang dimasukkan tidak akan terlihat (biasanya diganti dengan titik atau bintang).
-   
+
    **Contoh**:
+
    ```html
    <form>
      <label for="password">Password:</label>
      <input type="password" id="password" name="password">
    </form>
    ```
-
 3. **Radio Button (`<input type="radio">`)**
+
    - Digunakan untuk memilih satu dari beberapa pilihan. Semua radio button dengan nama yang sama merupakan bagian dari satu grup.
-   
+
    **Contoh**:
+
    ```html
    <form>
      <label><input type="radio" name="gender" value="male"> Laki-laki</label>
      <label><input type="radio" name="gender" value="female"> Perempuan</label>
    </form>
    ```
-
 4. **Checkbox (`<input type="checkbox">`)**
+
    - Digunakan untuk memilih satu atau lebih dari beberapa opsi. Setiap checkbox berdiri sendiri, meskipun memiliki nama yang sama.
-   
+
    **Contoh**:
+
    ```html
    <form>
      <label><input type="checkbox" name="hobby" value="music"> Musik</label>
      <label><input type="checkbox" name="hobby" value="sports"> Olahraga</label>
    </form>
    ```
-
 5. **Dropdown List (`<select>`)**
+
    - Menyediakan daftar pilihan yang dapat dipilih pengguna.
-   
+
    **Contoh**:
+
    ```html
    <form>
      <label for="city">Pilih Kota:</label>
@@ -536,32 +604,35 @@ Elemen `<form>` berfungsi sebagai wadah untuk elemen input, tombol, dan kontrol 
      </select>
    </form>
    ```
-
 6. **Textarea (`<textarea>`)**
+
    - Digunakan untuk input teks yang lebih panjang atau lebih dari satu baris.
-   
+
    **Contoh**:
+
    ```html
    <form>
      <label for="comments">Komentar:</label>
      <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
    </form>
    ```
-
 7. **Submit Button (`<input type="submit">` atau `<button type="submit">`)**
+
    - Tombol untuk mengirim data formulir ke server.
-   
+
    **Contoh**:
+
    ```html
    <form>
      <input type="submit" value="Kirim">
    </form>
    ```
-
 8. **Reset Button (`<input type="reset">`)**
+
    - Mengembalikan semua nilai input dalam formulir ke kondisi default.
-   
+
    **Contoh**:
+
    ```html
    <form>
      <input type="reset" value="Reset">
@@ -570,38 +641,34 @@ Elemen `<form>` berfungsi sebagai wadah untuk elemen input, tombol, dan kontrol 
 
 ### Atribut Penting dalam Formulir
 
-1. **`action`**: URL tempat formulir akan dikirim untuk diproses.  
-   **Contoh**:
+1. **`action`**: URL tempat formulir akan dikirim untuk diproses.**Contoh**:
+
    ```html
    <form action="/submit-data">
    ```
+2. **`method`**: Metode HTTP yang digunakan (`GET` atau `POST`).**Contoh**:
 
-2. **`method`**: Metode HTTP yang digunakan (`GET` atau `POST`).  
-   **Contoh**:
    ```html
    <form method="POST">
    ```
+3. **`name`**: Nama yang digunakan untuk mengidentifikasi elemen input. Nama ini dikirim bersama nilai input ke server.**Contoh**:
 
-3. **`name`**: Nama yang digunakan untuk mengidentifikasi elemen input. Nama ini dikirim bersama nilai input ke server.  
-   **Contoh**:
    ```html
    <input type="text" name="username">
    ```
+4. **`placeholder`**: Teks yang ditampilkan dalam input sebelum pengguna memasukkan data.**Contoh**:
 
-4. **`placeholder`**: Teks yang ditampilkan dalam input sebelum pengguna memasukkan data.  
-   **Contoh**:
    ```html
    <input type="text" placeholder="Masukkan nama Anda">
    ```
+5. **`required`**: Atribut boolean yang menandakan bahwa input harus diisi sebelum formulir bisa dikirim.**Contoh**:
 
-5. **`required`**: Atribut boolean yang menandakan bahwa input harus diisi sebelum formulir bisa dikirim.  
-   **Contoh**:
    ```html
    <input type="text" name="email" required>
    ```
-
-6. **`maxlength`**: Batas maksimum karakter yang dapat dimasukkan ke dalam input teks.  
+6. **`maxlength`**: Batas maksimum karakter yang dapat dimasukkan ke dalam input teks.
    **Contoh**:
+
    ```html
    <input type="text" name="username" maxlength="15">
    ```
@@ -635,6 +702,7 @@ Elemen `<form>` berfungsi sebagai wadah untuk elemen input, tombol, dan kontrol 
 ```
 
 ### Kesimpulan
+
 Formulir HTML adalah cara penting untuk berinteraksi dengan pengguna, baik untuk mengumpulkan data atau menjalankan aksi di server. Menggunakan atribut yang tepat memungkinkan Anda untuk memvalidasi dan memproses data dengan cara yang lebih efisien dan aman.
 
 ## Form Labels
@@ -648,20 +716,23 @@ Label dapat dibuat menggunakan elemen HTML **`<label>`**, dan elemen ini dapat d
 ### Dua Cara Menghubungkan Label dengan Input:
 
 1. **Menggunakan atribut `for` pada elemen `<label>`**:
+
    - Atribut `for` diisi dengan nilai dari atribut `id` pada elemen input. Ini menghubungkan label dengan input secara eksplisit.
-   
+
    **Contoh**:
+
    ```html
    <label for="username">Username:</label>
    <input type="text" id="username" name="username">
    ```
 
    Dalam contoh di atas, ketika label "Username" diklik, kursor akan secara otomatis berpindah ke input teks yang memiliki `id="username"`.
-
 2. **Membungkus input dengan elemen `<label>`**:
+
    - Cara lain adalah dengan menempatkan elemen input di dalam elemen `<label>`. Ini menghubungkan label dan input secara implisit.
 
    **Contoh**:
+
    ```html
    <label>Username:
      <input type="text" name="username">
@@ -673,27 +744,28 @@ Label dapat dibuat menggunakan elemen HTML **`<label>`**, dan elemen ini dapat d
 ### Contoh Penggunaan untuk Berbagai Elemen Formulir:
 
 1. **Input Teks**:
+
    ```html
    <label for="email">Email:</label>
    <input type="email" id="email" name="email" required>
    ```
-
 2. **Radio Button**:
+
    ```html
    <label for="male">Laki-laki</label>
    <input type="radio" id="male" name="gender" value="male">
-   
+
    <label for="female">Perempuan</label>
    <input type="radio" id="female" name="gender" value="female">
    ```
-
 3. **Checkbox**:
+
    ```html
    <label for="subscribe">Berlangganan newsletter</label>
    <input type="checkbox" id="subscribe" name="subscribe">
    ```
-
 4. **Dropdown (Select)**:
+
    ```html
    <label for="city">Kota:</label>
    <select id="city" name="city">
@@ -706,12 +778,11 @@ Label dapat dibuat menggunakan elemen HTML **`<label>`**, dan elemen ini dapat d
 ### Pentingnya Menggunakan Label
 
 1. **Aksesibilitas**: Pengguna dengan keterbatasan atau yang menggunakan pembaca layar (screen readers) akan dapat memahami apa yang diminta oleh setiap input karena label membantu memberikan deskripsi yang jelas.
-
 2. **Interaksi Pengguna**: Mengklik pada label juga akan memfokuskan input terkait, membuat interaksi lebih mudah dan efisien, terutama untuk elemen kecil seperti checkbox atau radio button.
-
 3. **Pengalaman Pengguna yang Lebih Baik**: Label membantu pengguna memahami informasi yang harus dimasukkan dan mengurangi kesalahan input.
 
 ### Kesimpulan
+
 Penggunaan label yang benar adalah bagian penting dari pembuatan formulir yang dapat digunakan secara optimal oleh semua pengguna, terutama dalam hal aksesibilitas dan kemudahan penggunaan.
 
 ## Form Selections
@@ -750,24 +821,26 @@ Elemen `<select>` berfungsi sebagai wadah untuk elemen **`<option>`**, yang masi
 ```
 
 Dalam contoh di atas:
+
 - Daftar dropdown berisi tiga pilihan kota: Jakarta, Bandung, dan Surabaya.
 - Nilai yang dikirim ke server sesuai dengan `value` dari masing-masing opsi (`jakarta`, `bandung`, atau `surabaya`).
 
 ### Atribut dalam Elemen `<select>`
 
 1. **`name`**: Nama elemen yang akan dikirimkan bersama dengan data formulir.
+
    - **Contoh**:
      ```html
      <select name="country">
      ```
-
 2. **`id`**: Digunakan untuk menghubungkan dengan elemen `<label>` atau untuk digunakan dengan CSS/JavaScript.
+
    - **Contoh**:
      ```html
      <select id="country">
      ```
-
 3. **`multiple`**: Atribut boolean yang memungkinkan pengguna memilih lebih dari satu opsi. Saat ini digunakan, tampilan biasanya berubah dari dropdown menjadi daftar.
+
    - **Contoh**:
      ```html
      <select name="fruits" id="fruits" multiple>
@@ -780,18 +853,19 @@ Dalam contoh di atas:
 ### Atribut dalam Elemen `<option>`
 
 1. **`value`**: Nilai yang dikirim ke server saat opsi dipilih.
+
    - **Contoh**:
      ```html
      <option value="apple">Apple</option>
      ```
-
 2. **`selected`**: Atribut boolean yang menandakan opsi mana yang dipilih secara default saat halaman dimuat.
+
    - **Contoh**:
      ```html
      <option value="banana" selected>Banana</option>
      ```
-
 3. **`disabled`**: Atribut boolean yang membuat opsi tidak dapat dipilih.
+
    - **Contoh**:
      ```html
      <option value="cherry" disabled>Cherry</option>
@@ -809,6 +883,7 @@ Dalam contoh di atas:
   </select>
 </form>
 ```
+
 Dalam contoh ini, "Honda" dipilih secara default ketika halaman dimuat.
 
 ### Dropdown dengan Multi-Select
@@ -849,5 +924,5 @@ Anda dapat mengelompokkan opsi dalam sebuah grup menggunakan elemen **`<optgroup
 Dalam contoh di atas, ada dua grup: satu untuk "Buah" dan satu untuk "Sayuran."
 
 ### Kesimpulan
-Elemen `<select>` dan `<option>` sangat berguna untuk membuat daftar pilihan dalam formulir. Dengan menambahkan atribut seperti `multiple`, `selected`, dan `disabled`, Anda dapat membuat daftar yang fleksibel dan mudah digunakan oleh pengguna.
 
+Elemen `<select>` dan `<option>` sangat berguna untuk membuat daftar pilihan dalam formulir. Dengan menambahkan atribut seperti `multiple`, `selected`, dan `disabled`, Anda dapat membuat daftar yang fleksibel dan mudah digunakan oleh pengguna.
