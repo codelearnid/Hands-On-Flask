@@ -2,45 +2,45 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Forms - Labels and Validations</title>
+    <title>Formulir - Label dan Validasi</title>
   </head>
   <body>
-    <!--  You can specify the input type-->
-    <!--  Reference Links-->
+    <!--  Anda dapat menentukan tipe input-->
+    <!--  Tautan Referensi-->
     <!-- http://www.w3schools.com/TAGs/att_input_type.asp -->
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input -->
 
-    <!--Actions: where we send the data -->
-    <!--Method: get/post HTTP method -->
+    <!--Aksi: tempat kita mengirim data -->
+    <!--Metode: metode HTTP get/post -->
 
     <h1>Log In</h1>
-    <h2>Please Input your Password and Email</h2>
+    <h2>Silakan Masukkan Kata Sandi dan Email Anda</h2>
 
-    <!-- Two ways of using a Label-->
+    <!-- Dua cara menggunakan Label-->
     <!-- Nested -->
-    <!--  for and id connection-->
+    <!--  koneksi for dan id -->
 
-    <!-- Upon submitting the form will perform the action (a redirect) -->
+    <!-- Saat mengirimkan formulir akan melakukan aksi (pengalihan) -->
     <form action="http://www.google.com" method="get">
 
       <label for="email">EMAIL:</label>
 
-         <input type="email" id="email" name="useremail" value="Email Here">
+         <input type="email" id="email" name="useremail" value="Masukkan Email">
 
 
 
-      <label for="pass">PASSWORD:</label>
-      <input type="password" id="pass" name="password" placeholder="Password">
+      <label for="pass">KATA SANDI:</label>
+      <input type="password" id="pass" name="password" placeholder="Kata Sandi">
 
 
-      <!-- Validation -->
-      <!--  Usually do a lot more validation with Backend-->
-      <!--  Use the attribute: required to require input-->
+      <!-- Validasi -->
+      <!--  Biasanya melakukan validasi lebih banyak dengan Backend-->
+      <!--  Gunakan atribut: required untuk mengharuskan input-->
 
-      <label for="userinput">TEXT:</label>
+      <label for="userinput">TEKS:</label>
 
 
-      <input type="text" id="userinput" name="input" placeholder="Enter Text Here" required>
+      <input type="text" id="userinput" name="input" placeholder="Masukkan Teks Di Sini" required>
 
       <input type="submit" >
 

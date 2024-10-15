@@ -1,67 +1,72 @@
-# # Lists
+# # Daftar
 #
-# Earlier when discussing strings we introduced the concept of a "sequence" in
-# Python. Lists can be thought of the most general version of a "sequence" in
-# Python. Unlike strings, they are mutable, meaning the elements inside a list can be changed!
+# Sebelumnya, ketika membahas string, kita memperkenalkan konsep "urutan" dalam
+# Python. Daftar dapat dianggap sebagai versi yang paling umum dari "urutan" dalam
+# Python. Berbeda dengan string, mereka dapat diubah, artinya elemen di dalam daftar dapat diubah!
 #
-# In this section we will learn about:
+# Dalam bagian ini kita akan belajar tentang:
 #
-#     1.) Creating lists
-#     2.) Indexing and Slicing Lists
-#     3.) Basic List Methods
-#     4.) Nesting Lists
-#     5.) Introduction to List Comprehensions
+#     1.) Membuat daftar
+#     2.) Mengindeks dan Mengiris Daftar
+#     3.) Metode Daftar Dasar
+#     4.) Menggabungkan Daftar
+#     5.) Pengenalan ke Komprehensi Daftar
 #
-# Lists are constructed with brackets [] and commas separating every element in the list.
+# Daftar dibuat dengan tanda kurung [] dan koma yang memisahkan setiap elemen dalam daftar.
 #
-# Let's go ahead and see how we can construct lists!
+# Mari kita lihat bagaimana kita dapat membuat daftar!
 
-# Assign a list to an variable named my_list
+# Tetapkan daftar ke variabel bernama my_list
 my_list = [1,2,3]
 
 
-# We just created a list of integers, but lists can actually
-# hold different object types. For example:
+# Kita baru saja membuat daftar bilangan bulat, tapi daftar sebenarnya
+# dapat menampung tipe objek yang berbeda. Contoh:
 
-my_list = ['A string',23,100.232,'o']
+my_list = ['Sebuah string',23,100.232,'o']
 
-
-# Just like strings, the len() function will tell you how
-# many items are in the sequence of the list.
+# Sama seperti string, fungsi len() akan memberitahu Anda berapa banyak item dalam urutan daftar.
 len(my_list)
 
-
 ##############################
-#### Indexing and Slicing ####
+#### Mengindeks dan Mengiris Daftar ####
 ##############################
 
-# Indexing and slicing works just like in strings. Let's make a new list to
-# remind ourselves of how this works:
-my_list = ['one','two','three',4,5]
+# Mengindeks dan mengiris bekerja sama seperti dalam string. Mari kita buat daftar baru untuk
+# mengingatkan diri kita bagaimana cara ini bekerja:
+my_list = ['satu','dua','tiga',4,5]
 
-# Grab element at index 0
+# Ambil elemen pada indeks 0
 my_list[0]
 
-# Grab index 1 and everything past it
+# Ambil indeks 1 dan segalanya setelah itu
 my_list[1:]
 
-# Grab everything UP TO index 3
+# Ambil segalanya HINGGA indeks 3
 my_list[:3]
 
-# We can also use + to concatenate lists, just like we did for strings.
+# Kita juga dapat menggunakan + untuk menggabungkan daftar, seperti yang kita lakukan untuk string.
 
-my_list + ['new item']
+my_list + ['item baru']
 
-# Note: This doesn't actually change the original list!
+# Catatan: Ini tidak benar-benar mengubah daftar asli!
 
 my_list
 
-# You would have to reassign the list to make the change permanent.
+# Anda harus mengubah kembali daftar untuk membuat perubahan permanen.
 
 
-# Reassign
-my_list = my_list + ['add new item permanently']
+# Ubah kembali
+my_list = my_list + ['tambah item baru secara permanen']
 
+my_list
+
+# Kita juga dapat menggunakan * untuk metode duplikasi serupa dengan string:
+
+# Buat daftar menjadi dua kali lipat
+my_list * 2
+
+# Lagi, duplikasi tidak permanen
 my_list
 
 # We can also use the * for a duplication method similar to strings:
@@ -72,83 +77,72 @@ my_list * 2
 # Again doubling not permanent
 my_list
 
-
 #############################
-#### Basic List Methods #####
+#### Metode Daftar Dasar #####
 #############################
 #
-# If you are familiar with another programming language, you might start to draw
-# parallels between arrays in another language and lists in Python. Lists in
-# Python however, tend to be more flexible than arrays in other languages for a
-# two good reasons: they have no fixed size (meaning we don't have to specify
-# how big a list will be), and they have no fixed type constraint (like we've seen above).
+# Jika Anda familiar dengan bahasa pemrograman lain, Anda mungkin mulai menggambar
+# paralel antara array dalam bahasa lain dan daftar dalam Python. Daftar dalam
+# Python, bagaimanapun, cenderung lebih fleksibel daripada array dalam bahasa lain karena dua alasan yang baik: mereka tidak memiliki ukuran yang tetap (artinya kita tidak harus menentukan
+# seberapa besar daftar akan), dan mereka tidak memiliki konstrain tipe yang tetap (seperti yang kita lihat di atas).
 #
-# Let's go ahead and explore some more special methods for lists:
+# Mari kita lanjutkan dan eksplorasi beberapa metode khusus untuk daftar:
 
-# Create a new list
+# Buat daftar baru
 mylist = [1,2,3]
 
+# Gunakan metode .append() untuk secara permanen menambahkan item ke akhir daftar:
 
-# Use the .append() method to permanently add an item to the end of a list:
+# Tambahkan
+mylist.append('tambah saya!')
 
-# Append
-mylist.append('append me!')
-
-# Show
+# Tampilkan
 print(mylist)
 
+# Gunakan "pop" untuk "menghapus" item dari daftar. Secara default pop menghapus item terakhir, tetapi Anda juga dapat menentukan indeks mana yang akan dihapus. Mari kita lihat contoh:
 
-# Use "pop" to "pop off" an item from the list. By default pop takes off the last
-# index, but you can also specify which index to pop off. Let's see an example:
-
-# Pop off the 0 indexed item
+# Hapus item yang berindeks 0
 mylist.pop(0)
 
-# Show
+# Tampilkan
 mylist
 
-# Assign the popped element, remember default popped index is -1
+# Tetapkan item yang dihapus, ingat bahwa indeks yang dihapus secara default adalah -1
 popped_item = mylist.pop()
 
 print(popped_item)
 
-# Show remaining list
+# Tampilkan daftar yang tersisa
 print(mylist)
 
-
-# It should also be noted that lists indexing will return an error if there is
-# no element at that index. For example:
+# Juga harus diperhatikan bahwa pengindeksan daftar akan mengembalikan kesalahan jika tidak ada elemen pada indeks tersebut. Contoh:
 mylist[100]
 
-
-
-
 #######################
-#### Nesting Lists ####
+#### Menggabungkan Daftar ####
 #######################
-# A great feature of of Python data structures is that they support nesting.
-# This means we can have data structures within data structures.
-# For example: A list inside a list.
+# Fitur hebat dari struktur data Python adalah bahwa mereka mendukung penggabungan.
+# Ini berarti kita dapat memiliki struktur data dalam struktur data lainnya.
+# Contoh: Daftar di dalam daftar.
 #
-# Let's see how this works!
+# Mari kita lihat bagaimana ini bekerja!
 
-# Let's make three lists
+# Buat tiga daftar
 lst_1=[1,2,3]
 lst_2=[4,5,6]
 lst_3=[7,8,9]
 
-# Make a list of lists to form a matrix
+# Buat daftar dari daftar untuk membentuk matriks
 matrix = [lst_1,lst_2,lst_3]
 
-# Show
+# Tampilkan
 matrix
 
+# Sekarang kita dapat menggunakan pengindeksan untuk mengambil elemen, tapi sekarang ada dua tingkat
+# untuk indeks. Item dalam objek matriks, dan kemudian item dalam daftar itu!
 
-# Now we can again use indexing to grab elements, but now there are two levels
-# for the index. The items in the matrix object, and then the items inside that list!
-
-# Grab first item in matrix object
+# Ambil item pertama dalam objek matriks
 matrix[0]
 
-# Grab first item of the first item in the matrix object
+# Ambil item pertama dari item pertama dalam objek matriks
 matrix[0][0]

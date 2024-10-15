@@ -1,20 +1,20 @@
 /*
-This is a comment
+Ini adalah komentar
 */
 
 /*
-General Form is:
+Bentuk Umum adalah:
 
-Selected Tag {
-  property: value;
+Tag yang Dipilih {
+  properti: nilai;
 }
 
 */
 
-/*Colors can be names, or codes*/
+/*Warna dapat berupa nama, atau kode*/
 
 h1{
-  color: blue;
+  color: biru;
 }
 
 li {
