@@ -2,48 +2,40 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Assessment Test HTML LEVEL 2</title>
+    <title>Form Registrasi - Daftar Sekarang</title>
   </head>
   <body>
-    <h1>Puppy Adoption Page</h1>
-    <h2>Please enter your information to adopt a puppy and we'll email you back.</h2>
-    <p>Please Note: First Name, Last Name, Password, and Email are required</p>
+    <h2>Form Registrasi - Daftar Sekarang</h2>
+    <p>Isi formulir ini untuk mendaftar dan menjadi bagian dari komunitas kami.</p>
+    <form action="/submit_registration" method="POST">
+      
+      <label for="fname">Nama Depan:</label><br>
+      <input type="text" id="fname" name="firstname" placeholder="Nama depan Anda.." required><br><br>
 
-        <form method="get">
+      <label for="lname">Nama Belakang:</label><br>
+      <input type="text" id="lname" name="lastname" placeholder="Nama belakang Anda.." required><br><br>
 
-          <label for="FirstName">First Name:</label>
-          <input type="text" id="FirstName" placeholder="First Name">
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="Email Anda.." required><br><br>
 
-          <label for="LastName">Last Name:</label>
-          <input type="text" id="LastName" placeholder="Last Name">
-          <p></p>
+      <label for="dob">Tanggal Lahir:</label><br>
+      <input type="date" id="dob" name="dob" required><br><br>
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" placeholder="name@email.com">
+      <label for="gender">Jenis Kelamin:</label><br>
+      <select id="gender" name="gender" required>
+        <option value="">Pilih jenis kelamin</option>
+        <option value="male">Laki-laki</option>
+        <option value="female">Perempuan</option>
+        <option value="other">Lainnya</option>
+      </select><br><br>
 
-          <label for="pass">Password:</label>
-          <input type="password" id="pass" >
+      <label for="password">Kata Sandi:</label><br>
+      <input type="password" id="password" name="password" placeholder="Kata sandi Anda.." required><br><br>
 
-          <p>Are you over the age of 18?</p>
-          <label for="yes">Yes:</label>
-          <input type="radio" name="Over18" id="yes" value="yesOver">
+      <label for="confirm_password">Konfirmasi Kata Sandi:</label><br>
+      <input type="password" id="confirm_password" name="confirm_password" placeholder="Ketik ulang kata sandi Anda.." required><br><br>
 
-          <label for="no">No:</label>
-          <input type="radio" name="Over18" id="no" value="noOver">
-
-
-          <p>Do you have a Credit Card or PayPal?</p>
-          <select name="payment">
-            <option value="cc">Credit Card</option>
-            <option value="pp">PayPal</option>
-          </select>
-
-          <p></p>
-          <input type="submit" name="" value="Submit Feedback">
-
-
-        </form>
-
-
+      <input type="submit" value="Daftar">
+    </form>
   </body>
 </html>
