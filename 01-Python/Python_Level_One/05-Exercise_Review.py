@@ -1,68 +1,35 @@
-#####################################
-#### PART 6: EXERCISE REVIEW  #######
-#####################################
-
-# Time to review all the basic data types we learned! This should be a
-# relatively straight-forward and quick assignment.
-
-###############
-## Problem 1 ##
-###############
-
-# Given the string:
+## Tugas 1 ##
+# Diberikan string:
 s = 'flask'
-
-# Use indexing to print out the following:
+# Gunakan indeks untuk mencetak hal berikut:
 # 'f'
-
 # 's'
-
 # 'ask'
-
 # 'las'
-
 # 'k'
 
-# Bonus: Use indexing to reverse the string
-
-
-###############
-## Problem 2 ##
-###############
-
-# Given this nested list:
+# Bonus: Gunakan indeks untuk membalik string
+## Masalah 2 ##
+# Diberikan daftar bertingkat ini:
 mylist = [3,7,[1,4,'hello']]
-# Reassign "hello" to be "goodbye"
+# Ganti "hello" menjadi "goodbye"
 
-
-###############
-## Problem 3 ##
-###############
-
-# Using keys and indexing, grab the 'hello' from the following dictionaries:
-
+## Masalah 3 ##
+# Dengan menggunakan kunci dan indeks, ambil 'hello' dari kamus-kamus berikut:
 d1 = {'simple_key':'hello'}
 
 d2 = {'k1':{'k2':'hello'}}
 
 d3 = {'k1':[{'nest_key':['this is deep',['hello']]}]}
 
-
-###############
-## Problem 4 ##
-###############
-
-# Use a set to find the unique values of the list below:
+## Masalah 4 ##
+# Gunakan set untuk menemukan nilai unik dari daftar di bawah ini:
 mylist = [1,1,1,1,1,2,2,2,2,3,3,3,3]
 
-
-###############
-## Problem 5 ##
-###############
-
-# You are given two variables:
+## Masalah 5 ##
+# Anda diberikan dua variabel:
 age = 4
 name = "Sammy"
 
-# Use print formatting to print the following string:
+# Gunakan format print untuk mencetak string berikut:
 "Hello my dog's name is Sammy and he is 4 years old"

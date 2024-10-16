@@ -1,167 +1,150 @@
 ##################################
-## Tuples, Sets, and Booleans ####
+## Tuple, Set, dan Boolean ####
 ##################################
 #
-# In Python tuples are very similar to lists, however, unlike lists they are
-# immutable meaning they can not be changed. You would use tuples to present
-# things that shouldn't be changed, such as days of the week, or dates on a calendar.
+# Dalam Python, tuple sangat mirip dengan list, namun, tidak seperti list, mereka
+# tidak dapat diubah. Anda akan menggunakan tuple untuk menyajikan
+# hal-hal yang tidak seharusnya diubah, seperti hari dalam seminggu, atau tanggal pada kalender.
 #
-# In this section, we will get a brief overview of the following:
+# Dalam bagian ini, kita akan mendapatkan gambaran singkat tentang hal-hal berikut:
 #
-#     1.) Constructing Tuples
-#     2.) Basic Tuple Methods
-#     3.) Immutability
-#     4.) When to Use Tuples.
+#     1.) Membangun Tuple
+#     2.) Metode Tuple Dasar
+#     3.) Ketidakubahannya
+#     4.) Kapan Menggunakan Tuple.
 #
-# You'll have an intuition of how to use tuples based on what you've learned
-# about lists. We can treat them very similarly with the major distinction being
-# that tuples are immutable.
+# Anda akan memiliki intuisi tentang bagaimana menggunakan tuple berdasarkan apa yang telah Anda pelajari
+# tentang list. Kita dapat mengobati mereka sangat mirip dengan perbedaan utama bahwa tuple tidak dapat diubah.
 #
 ############################
-#### Constructing Tuples ###
+#### Membangun Tuple ###
 ############################
 #
-# The construction of a tuples use () with elements separated by commas. For example:
+# Pembangunan tuple menggunakan () dengan elemen yang dipisahkan oleh koma. Contoh:
 
-# Can create a tuple with mixed types
+# Dapat membuat tuple dengan tipe campuran
 t = (1,2,3)
 
-# Check len just like a list
+# Cek panjang seperti pada list
 len(t)
 
-# Can also mix object types
+# Dapat juga mencampur tipe objek
 t = ('one',2)
 
-# Show
+# Tampilkan
 t
 
-# Use indexing just like we did in lists
+# Gunakan indeks seperti yang kita lakukan pada list
 t[0]
 
-# Slicing just like a list
+# Slicing seperti pada list
 t[-1]
 
 ############################
-### Basic Tuple Methods ####
+### Metode Tuple Dasar ####
 ############################
 
-# Tuples have built-in methods, but not as many as lists do.
-# Lets look at two of them:
+# Tuple memiliki metode bawaan, tetapi tidak sebanyak yang dimiliki list.
+# Mari kita lihat dua di antaranya:
 
-# Use .index to enter a value and return the index
+# Gunakan .index untuk memasukkan nilai dan mengembalikan indeks
 t.index('one')
 
-# Use .count to count the number of times a value appears
+# Gunakan .count untuk menghitung jumlah kali nilai muncul
 t.count('one')
 
 ####################
-### Immutability ###
+### Ketidakubahannya ###
 ####################
 
-# It can't be stressed enough that tuples are immutable.
-# To drive that point home:
+# Tidak dapat ditekankan cukup bahwa tuple tidak dapat diubah.
+# Untuk menekankan hal ini:
 
-t[0]= 'change'
+t[0]= 'ubah'
 
-# Because of this immutability, tuples can't grow.
-# Once a tuple is made we can not add to it.
+# Karena ketidakubahannya ini, tuple tidak dapat tumbuh.
+# Setelah tuple dibuat, kita tidak dapat menambahkannya.
 
-t.append('nope')
+t.append('tidak')
 
 ############################
-### When to use Tuples #####
+### Kapan Menggunakan Tuple #####
 ############################
 
-# You may be wondering, "Why bother using tuples when they have fewer available
-# methods?" To be honest, tuples are not used as often as lists in programming,
-# but are used when immutability is necessary. If in your program you are passing
-#  around an object and need to make sure it does not get changed, then tuple
-# become your solution. It provides a convenient source of data integrity.
+# Anda mungkin bertanya, "Mengapa repot menggunakan tuple ketika mereka memiliki metode yang lebih sedikit?" Untuk jujur, tuple tidak digunakan sebanyak list dalam pemrograman,
+# tapi digunakan ketika ketidakubahannya diperlukan. Jika dalam program Anda sedang melewati objek dan perlu memastikan bahwa objek tersebut tidak berubah, maka tuple menjadi solusinya. Ini menyediakan sumber integritas data yang nyaman.
 #
-# You should now be able to create and use tuples in your programming as well as
-# have an understanding of their immutability.
+# Anda sekarang harus dapat membuat dan menggunakan tuple dalam pemrograman Anda serta memiliki pemahaman tentang ketidakubahannya.
 #
 
 ########################################################
 ########################################################
-############## SETS AND BOOLEANS #######################
+############## SETS DAN BOOLEANS #######################
 ########################################################
 ########################################################
 #
-# There are two other object types in Python that we should quickly cover. Sets and Booleans.
+# Ada dua tipe objek lainnya dalam Python yang kita harus singkatkan. Set dan Boolean.
 #
 ############
 ### Sets ###
 ############
 
-# Sets are an unordered collection of *unique* elements. We can construct them
-# by using the set() function. Let's go ahead and make a set to see how it works
+# Set adalah koleksi elemen *unik* yang tidak berurutan. Kita dapat membuat mereka dengan menggunakan fungsi set(). Mari kita lihat bagaimana cara membuat set untuk melihat bagaimana mereka bekerja!
 
 x = set()
 
-# We add to sets with the add() method
+# Kita menambahkan ke set dengan metode add()
 x.add(1)
 
-#Show
+#Tampilkan
 x
 
 
-# Note the curly brackets. This does not indicate a dictionary! Although you can
-# draw analogies as a set being a dictionary with only keys.
-#
-# We know that a set has only unique entries. So what happens when we try to add
-# something that is already in a set?
+# Perhatikan bahwa set memiliki entri yang unik saja. Jadi apa yang terjadi ketika kita mencoba menambahkan sesuatu yang sudah ada dalam set?
 
-# Add a different element
+# Tambahkan elemen yang berbeda
 x.add(2)
 
-#Show
+#Tampilkan
 x
 
-# Try to add the same element
+# Coba tambah elemen yang sama
 x.add(1)
 
-#Show
+#Tampilkan
 x
 
 
-# Notice how it won't place another 1 there. That's because a set is only
-# concerned with unique elements! We can cast a list with multiple repeat
-# elements to a set to get the unique elements. For example:
+# Perhatikan bahwa itu tidak akan menempatkan 1 lainnya di sana. Itu karena set hanya peduli dengan elemen yang unik! Kita dapat mengubah list dengan elemen yang berulang menjadi set untuk mendapatkan elemen yang unik. Contoh:
 
-# Create a list with repeats
+# Buat list dengan ulangan
 mylist = [1,1,2,2,3,4,5,6,1,1]
 
-# Cast as set to get unique values
+# Ubah menjadi set untuk mendapatkan elemen yang unik
 set(mylist)
 
 ##########################
 ######## Booleans ########
 ##########################
-# Python comes with Booleans (with predefined True and False displays that are
-# basically just the integers 1 and 0). It also has a placeholder object called
-# None. Let's walk through a few quick examples of Booleans (we will dive
-# deeper into them later in this course).
+# Python datang dengan Boolean (dengan tampilan True dan False yang telah ditentukan) yang pada dasarnya hanya bilangan 1 dan 0. Itu juga memiliki objek placeholder yang disebut None. Mari kita berjalan melalui beberapa contoh Boolean yang cepat (kita akan membahas lebih lanjut tentang mereka nanti dalam kursus ini).
 
-# Set object to be a boolean
+# Tetapkan objek sebagai Boolean
 a = True
 
-#Show
+#Tampilkan
 a
 
 
-# We can also use comparison operators to create booleans. We will go over all
-# the comparison operators later on in the course.
+# Kita juga dapat menggunakan operator perbandingan untuk membuat Boolean. Kita akan membahas semua operator perbandingan nanti dalam kursus ini.
 
-# Output is boolean
+# Output adalah Boolean
 1 > 2
 
 
-# We can use None as a placeholder for an object that we don't want to reassign yet:
+# Kita dapat menggunakan None sebagai placeholder untuk objek yang kita tidak ingin mengubahnya lagi:
 
-# None placeholder
+# Placeholder None
 b = None
 
 
-# Thats it! You should now have a basic understanding of Python objects and
-# data structure types. Next, go ahead and do the Review Exercises!
+# Itu saja! Anda sekarang harus memiliki pemahaman dasar tentang objek dan tipe data struktur dalam Python. Selanjutnya, silakan lakukan Latihan Ulasan!
