@@ -1,188 +1,187 @@
-
-### Functions
+### Fungsi
 #
-# Formally, a function is a useful device that groups together a set of statements so they can be run more than once. They can also let us specify parameters that can serve as inputs to the functions.
+# Secara formal, fungsi adalah perangkat yang berguna untuk mengelompokkan set instruksi sehingga dapat dijalankan lebih dari sekali. Mereka juga memungkinkan kita untuk menentukan parameter yang dapat berfungsi sebagai input untuk fungsi-fungsi tersebut.
 #
-# On a more fundamental level, functions allow us to not have to repeatedly write the same code again and again. If you remember back to the lessons on strings and lists, remember that we used a function len() to get the length of a string. Since checking the length of a sequence is a common task you would want to write a function that can do this repeatedly at command.
+# Pada tingkat yang lebih fundamental, fungsi memungkinkan kita untuk tidak harus menulis kode yang sama berulang-ulang. Jika Anda ingat kembali ke pelajaran tentang string dan list, ingat bahwa kita menggunakan fungsi len() untuk mendapatkan panjang dari sebuah string. Karena memeriksa panjang dari sebuah urutan adalah tugas yang umum, Anda ingin menulis fungsi yang dapat melakukan ini berulang-ulang sesuai perintah.
 #
-# Functions will be one of most basic levels of reusing code in Python, and it will also allow us to start thinking of program design (we will dive much deeper into the ideas of design when we learn about Object Oriented Programming).
+# Fungsi akan menjadi salah satu tingkat dasar dari penggunaan kembali kode di Python, dan ini juga akan memungkinkan kita untuk mulai berpikir tentang desain program (kita akan menyelami ide-ide desain lebih dalam ketika kita belajar tentang Pemrograman Berorientasi Objek).
 
-# ## The def Statement
+# ## Pernyataan def
 #
-# To create a function we use the **def** keyword. This is the general form of a function:
+# Untuk membuat fungsi kita menggunakan kata kunci **def**. Ini adalah bentuk umum dari sebuah fungsi:
 
 
 
-def lowercase_function_name(argument1,argument2,argument3='default value'):
+def nama_fungsi_kecil(argument1,argument2,argument3='nilai default'):
     '''
-    This is the DocString of the function. It is where you can write a helpful
-    description for anyone who will use your function.
+    Ini adalah DocString dari fungsi. Di sini Anda dapat menulis deskripsi yang membantu
+    untuk siapa pun yang akan menggunakan fungsi Anda.
     '''
-    # After the docstring you write code that does stuff.
+    # Setelah docstring Anda menulis kode yang melakukan sesuatu.
 
 
-# We begin with def then a space followed by the name of the function. Try to keep names relevant, for example len() is a good name for a length() function. Also be careful with names, you wouldn't want to call a function the same name as a built-in function in Python (such as len).
+# Kita mulai dengan def lalu sebuah spasi diikuti oleh nama dari fungsi. Cobalah untuk menjaga nama-nama relevan, misalnya len() adalah nama yang baik untuk fungsi panjang(). Juga berhati-hati dengan nama-nama, Anda tidak ingin memanggil fungsi dengan nama yang sama seperti fungsi bawaan di Python (seperti len).
 #
-# Next come a pair of parenthesis with a number of arguments separated by a comma. These arguments are the inputs for your function. You'll be able to use these inputs in your function and reference them. After this you put a colon.
+# Selanjutnya adalah sepasang kurung dengan sejumlah argumen yang dipisahkan oleh koma. Argumen-argumen ini adalah input untuk fungsi Anda. Anda akan dapat menggunakan input ini dalam fungsi Anda dan mengacu pada mereka. Setelah ini Anda menempatkan titik dua.
 #
-# Now here is the important step, you must indent to begin the code inside your function correctly. Python makes use of whitespace to organize code. Lots of other programing languages do not do this, so keep that in mind.
+# Sekarang ini adalah langkah penting, Anda harus mengindent untuk memulai kode di dalam fungsi Anda dengan benar. Python menggunakan whitespace untuk mengatur kode. Banyak bahasa pemrograman lain tidak melakukan ini, jadi perhatikan itu.
 #
-# Next you'll see the doc-string, this is where you write a basic description of the function. Using iPython and iPython Notebooks, you'll be able to read these doc-strings by pressing Shift+Tab after a function name. Doc strings are not necessary for simple functions, but its good practice to put them in so you or other people can easily understand the code you write.
+# Selanjutnya Anda akan melihat doc-string, ini adalah tempat Anda menulis deskripsi dasar dari fungsi. Menggunakan iPython dan iPython Notebooks, Anda akan dapat membaca doc-string ini dengan menekan Shift+Tab setelah nama fungsi. Doc string tidak diperlukan untuk fungsi-fungsi sederhana, tapi ini adalah praktik yang baik untuk memasukkannya sehingga Anda atau orang lain dapat dengan mudah memahami kode yang Anda tulis.
 
 # ____
 #
-# **Let's now walk through lots of examples of different functions.**
+# **Sekarang mari kita berjalan melalui banyak contoh dari fungsi-fungsi yang berbeda.**
 # ___
 
-# ### Example 1
+# ### Contoh 1
 
 
 
-def report_person():
-    print("Reporting Person")
+def lapor_orang():
+    print("Melaporkan Orang")
 
 
-# If you call the function without parenthesis it won't run, instead it will just report back what the object is:
+# Jika Anda memanggil fungsi tanpa kurung itu tidak akan berjalan, sebaliknya itu hanya akan melaporkan kembali apa objek itu:
 
-print(report_person)
-
-
-# Use parenthesis to run the function:
-report_person()
+print(lapor_orang)
 
 
-# ### Example 2
-# ** Passing in arguments/parameters **
-def report(name):
-    print("Reporting {}".format(name))
+# Gunakan kurung untuk menjalankan fungsi:
+lapor_orang()
 
 
-
-
-# Notice the error
-report()
+# ### Contoh 2
+# ** Mengirimkan argumen/parameter **
+def lapor(nama):
+    print("Melaporkan {}".format(nama))
 
 
 
 
-report('Bond')
-
-
-# ### Example 3
-# ** Default arguments can be used to set a default value. **
-
-
-
-def report(name='Jason'):
-    print('Reporting {}'.format(name))
-
-
-report()
+# Perhatikan kesalahan
+lapor()
 
 
 
 
-report('Kay')
+lapor('Bond')
 
 
-# ## The return keyword
-# So far all of our functions have only been printing results, but what if we wanted to save the actual results of a function to another variable? How could we do this? Let's first see what happens with just print()
+# ### Contoh 3
+# ** Argumen default dapat digunakan untuk mengatur nilai default. **
 
 
-def add(n1,n2):
+
+def lapor(nama='Jason'):
+    print('Melaporkan {}'.format(nama))
+
+
+lapor()
+
+
+
+
+lapor('Kay')
+
+
+# ## Kata kunci return
+# Sampai sekarang semua fungsi kita hanya mencetak hasil, tapi bagaimana jika kita ingin menyimpan hasil aktual dari sebuah fungsi ke variabel lain? Bagaimana kita bisa melakukan ini? Mari kita lihat apa yang terjadi hanya dengan print()
+
+
+def tambah(n1,n2):
     print(n1+n2)
 
 
 
 
-add(2,3)
+tambah(2,3)
 
 
 
 
-result = add(2,3)
+hasil = tambah(2,3)
 
 
 
 
-print(result)
+print(hasil)
 
 
 
 
-print(type(result))
+print(type(hasil))
 
 
-# Notice how we aren't able to save the result of the print() function. That is because it is not **returning** anything. Let's now use the return keyword.
+# Perhatikan bagaimana kita tidak dapat menyimpan hasil dari fungsi print(). Itu karena tidak **mengembalikan** apa pun. Mari kita sekarang menggunakan kata kunci return.
 
 
 
-def add(n1,n2):
+def tambah(n1,n2):
     return n1+n2
 
 
 
 
-add(2,3)
+tambah(2,3)
 
 
 
 
-result = add(2,3)
+hasil = tambah(2,3)
 
 
 
-print(result)
-
-
-
-
+print(hasil)
 
 
 
 
-# ### Solving Problems with Functions
+
+
+
+
+# ### Menyelesaikan Masalah dengan Fungsi
 #
-# Functions are a core building block for scripts and code. Let's show how you could solve a problem with a function.
+# Fungsi adalah blok bangunan dasar untuk skrip dan kode. Mari kita tunjukkan bagaimana Anda bisa menyelesaikan masalah dengan fungsi.
 
-# ** Write a function that returns a boolean (True/False) indicating if the word 'secret' is in a string. **
+# ** Tulis fungsi yang mengembalikan boolean (True/False) yang menunjukkan apakah kata 'secret' ada dalam sebuah string. **
 
 
 
-def secret_check(mystring):
+def cek_secret(mystring):
     return 'secret' in mystring
 
 
 # In[39]:
 
-secret_check('This is a secret.')
+cek_secret('This is a secret.')
 
 
 # In[40]:
 
-secret_check('SECRET')
+cek_secret('SECRET')
 
 
-# We can fix this with .lower()
+# Kita dapat memperbaiki ini dengan .lower()
 
 # In[41]:
 
-def secret_check(mystring):
+def cek_secret(mystring):
     return 'secret' in mystring.lower()
 
 
 # In[43]:
 
-secret_check('SECRET!')
+cek_secret('SECRET!')
 
 
 # _____
 
-# ** Create a code maker function. This function will take in a string name and replace any vowels with the letter x.**
+# ** Buat fungsi pembuat kode. Fungsi ini akan mengambil string nama dan menggantikan setiap vokal dengan huruf x.**
 
 # In[53]:
 
-def code_maker(mystring):
+def pembuat_kode(mystring):
     output = list(mystring)
     for i,letter in enumerate(mystring):
         for vowel in ['a','e','i','o','u']:
@@ -193,7 +192,7 @@ def code_maker(mystring):
     return output
 
 
-# Let's see what **''.join(output)** does:
+# Mari kita lihat apa yang dilakukan oleh **''.join(output)**:
 
 
 
@@ -212,15 +211,15 @@ def code_maker(mystring):
 
 
 
-code_maker('Edward')
+pembuat_kode('Edward')
 
 
 
 
-code_maker('John')
+pembuat_kode('John')
 
 
-# OTHER USEFUL Operators
+# OPERATOR LAINNYA YANG BERGUNA
 print(max(2,3))
 
 mylist = ['a','b','c']
@@ -236,5 +235,5 @@ for i, letter in enumerate(mylist):
     print(letter)
 
 
-#  Since functions are crucial to becoming a competent Python programmer,
-# up next we will have some tasks for you to complete with functions. Good luck!
+#  Karena fungsi sangat penting untuk menjadi programmer Python yang kompeten,
+# selanjutnya kita akan memiliki beberapa tugas untuk Anda selesaikan dengan fungsi. Selamat beruntung!
