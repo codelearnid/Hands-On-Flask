@@ -2,38 +2,38 @@
 #### CONTROL FLOW #######
 #########################
 
-# In this lecture we will cover Control Flow in Python, basically how to dictate
-# our code behaves in whatever manner we want. Let's start with basic comparison
-# Operators:
+# Dalam kuliah ini kita akan membahas Control Flow di Python, yaitu bagaimana cara mengatur
+# agar kode kita berperilaku sesuai dengan keinginan kita. Mari kita mulai dengan operator perbandingan
+# dasar:
 
 ###########################
-## COMPARISON OPERATORS ###
+## OPERATOR PERBANDINGAN ###
 ###########################
 
-# Greater than
+# Lebih besar dari
 1 > 2
-# Less than
+# Kurang dari
 1 < 2
-# Greater than or Equal to
+# Lebih besar atau sama dengan
 1 >= 1
-# Less than or Equal to
+# Kurang dari atau sama dengan
 1 <= 4
-# Equality
+# Kesamaan
 1 == 1
 1 == "1"
 'hi' == 'bye'
-# Inequality
+# Ketidakkesamaan
 1 != 2
 
 ###########################
-### LOGICAL OPERATORS #####
+### OPERATOR LOGIKA #####
 ###########################
 
-# AND
+# DAN
 (1 > 2) and (2 < 3)
 
-# OR
+# ATAU
 (1 > 2) or (2 < 3)
 
-# Multiple logical operators
+# Beberapa operator logika
 (1 == 2) or (2 == 3) or (4 == 4)

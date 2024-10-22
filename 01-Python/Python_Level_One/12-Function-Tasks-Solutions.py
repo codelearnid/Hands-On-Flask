@@ -1,45 +1,44 @@
-# Function Tasks
+# Tugas Fungsi
 #
 #
-# Let's see if you can solve these word problems by creating functions.
-# The function "skeleton" has been set up for you to fill in below the problem
-# description, as well as example outputs of what the function should return
-# given certain inputs. Best of luck, some of these will be challenging!
+# Mari kita lihat apakah Anda dapat menyelesaikan masalah-masalah ini dengan membuat fungsi.
+# "Skeleton" fungsi telah disiapkan untuk Anda isi di bawah deskripsi masalah,
+# serta contoh output apa yang harus dikembalikan fungsi tersebut jika diberikan input tertentu. Semoga berhasil, beberapa dari ini akan menantang!
 #
-# The tasks will start off easy and proceed to get harder and harder.
+# Tugas-tugas akan dimulai dengan mudah dan akan semakin sulit.
 
-# ## Task 1
+# ## Tugas 1
 #
-#  Create a function that takes in two integers and returns
-## a Boolean True if their sum is 10, False if their sum is something else.
+# Buat sebuah fungsi yang mengambil dua bilangan bulat dan mengembalikan
+## Boolean True jika jumlahnya adalah 10, False jika jumlahnya adalah yang lain.
 
-def check_ten(n1,n2):
+def cek_sepuluh(n1,n2):
 
     return (n1 + n2) == 10
 
 
 
 
-check_ten(10,0)
+cek_sepuluh(10,0)
 
 
 
 
-check_ten(5,5)
+cek_sepuluh(5,5)
 
 
 
 
-check_ten(2,7)
+cek_sepuluh(2,7)
 
 
 
-# ## Task 2
+# ## Tugas 2
 #
-# Create a function that takes in two integers and returns True if their
-# sum is 10, otherwise, return the actual sum value.
+# Buat sebuah fungsi yang mengambil dua bilangan bulat dan mengembalikan True jika jumlahnya
+# adalah 10, otherwise, return the actual sum value.
 
-def check_ten_sum(n1,n2):
+def cek_sepuluh_jumlah(n1,n2):
     if (n1+n2) == 10:
         return True
     else:
@@ -48,42 +47,41 @@ def check_ten_sum(n1,n2):
 
 
 
-check_ten_sum(10,0)
+cek_sepuluh_jumlah(10,0)
 
 
 
-check_ten_sum(2,7)
+cek_sepuluh_jumlah(2,7)
 
-# ## Task 3
+# ## Tugas 3
 #
-# Create a function that takes in a string and returns back the
-# first character of that string in upper case.
+# Buat sebuah fungsi yang mengambil sebuah string dan mengembalikan karakter pertama dari string tersebut dalam huruf besar.
 
 
 
-def first_upper(mystring):
-    # Code Here
+def pertama_besar(mystring):
+    # Kode Di Sini
     return mystring[0].upper()
 
 
-first_upper('hello')
+pertama_besar('hello')
 
 
 
 
-first_upper('agent')
+pertama_besar('agent')
 
 
-# ## Task 4
+# ## Tugas 4
 #
-# Create a function that takes in a string and returns the last two characters.
-# If there are less than two chracters, return the string:  "Error".
-# Use this link if you need help/hint.
+# Buat sebuah fungsi yang mengambil sebuah string dan mengembalikan dua karakter terakhir.
+# Jika ada kurang dari dua karakter, kembalikan string: "Error".
+# Gunakan tautan ini jika Anda membutuhkan bantuan/petunjuk.
 # (https://stackoverflow.com/questions/7983820/get-the-last-4-characters-of-a-string)
 
 
 
-def last_two(mystring):
+def dua_terakhir(mystring):
     if len(mystring) < 2:
         return "Error"
     else:
@@ -91,25 +89,25 @@ def last_two(mystring):
 
 
 
-last_two('hello')
+dua_terakhir('hello')
 
 
-last_two('hi')
+dua_terakhir('hi')
 
 
-last_two('a')
+dua_terakhir('a')
 
 
-# ## Task 5
+# ## Tugas 5
 #
-# Given a list of integers, return True if the sequence [1,2,3] is somewhere
-# in the list. Hint: Use slicing and a for loop.
+# Diberikan sebuah daftar bilangan bulat, kembalikan True jika urutan [1,2,3] ada di mana-mana
+# di dalam daftar. Petunjuk: Gunakan slicing dan for loop.
 
 
 
 
 
-def seq_check(nums):
+def cek_urutan(nums):
 
     # Note: iterate with length-2, so can use i+1 and i+2 in the loop
     for i in range(len(nums)-2):
@@ -120,49 +118,49 @@ def seq_check(nums):
 
 
 
-seq_check([1,2,3])
+cek_urutan([1,2,3])
 
 
 
-seq_check([7,7,7,1,2,3,7,7,7])
+cek_urutan([7,7,7,1,2,3,7,7,7])
 
 
 
-seq_check([3,2,1,3,2,1,1,1,2,2,3,3,3])
+cek_urutan([3,2,1,3,2,1,1,1,2,2,3,3,3])
 
 
-# ## Task 6
+# ## Tugas 6
 #
-# Given a 2 strings, create a function that returns the difference in length
-# between them. This difference in length should always be a positive number
-# (or just 0). Hint: Absolute Value.**
+# Diberikan 2 string, buat sebuah fungsi yang mengembalikan perbedaan panjang
+# di antara keduanya. Perbedaan panjang ini harus selalu menjadi angka positif
+# (atau hanya 0). Petunjuk: Nilai Mutlak.**
 
 
 
-def compare_len(s1,s2):
+def bandingkan_panjang(s1,s2):
     return abs(len(s1)-len(s2))
 
 
 
-compare_len('aa','aa')
+bandingkan_panjang('aa','aa')
 
 
-compare_len('a','bb')
+bandingkan_panjang('a','bb')
 
 
-compare_len('bb','a')
+bandingkan_panjang('bb','a')
 
 
 
-# ## Task 7
+# ## Tugas 7
 #
-# Given a list of integers, if the length of the list is an even number,
-# return the sum of the list. If the length of the list is odd, return the max
-## value in that list.
+# Diberikan sebuah daftar bilangan bulat, jika panjang daftar adalah bilangan genap,
+# kembalikan jumlah dari daftar. Jika panjang daftar adalah ganjil, kembalikan nilai maksimum
+## di dalam daftar tersebut.
 
 
 
-def sum_or_max(mylist):
+def jumlah_atau_maks(mylist):
     length = len(mylist)
 
     if length % 2 == 0:
@@ -172,8 +170,8 @@ def sum_or_max(mylist):
 
 
 
-sum_or_max([1,2,3])
+jumlah_atau_maks([1,2,3])
 
 
 
-sum_or_max([0,1,2,3])
+jumlah_atau_maks([0,1,2,3])

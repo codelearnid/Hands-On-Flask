@@ -2,14 +2,14 @@
 ### if,elif, else Statements #####
 ##################################
 
-# Indentation is extremely important in Python and is basically Python's way of
-# getting rid of enclosing brackets like {} we've seen in the past and are common
-# with other languages. This adds to Python's readability and is huge part of the
-# "Zen of Python". It is also a big reason why its so popular for beginners. Any
-# text editor or IDE should be able to auto-indent for you, but always double check
-# this if you ever get errors in your code! Code blocks are then noted by a colon (:).
+# Indentasi sangat penting dalam Python dan pada dasarnya adalah cara Python untuk
+# menghilangkan kurung kurawal seperti {} yang kita lihat di masa lalu dan umum
+# dengan bahasa lain. Ini menambahkan pada keterbacaan Python dan adalah bagian besar dari
+# "Zen of Python". Itu juga adalah alasan besar mengapa sangat populer untuk pemula. Setiap
+# editor teks atau IDE harus dapat mengindentasi secara otomatis untuk Anda, tetapi selalu periksa
+# ini jika Anda pernah mendapatkan kesalahan dalam kode Anda! Blok kode kemudian dicatat oleh titik dua (:).
 
-# Now let's show some examples of if, elif, and else statements:
+# Sekarang mari kita tunjukkan beberapa contoh dari pernyataan if, elif, dan else:
 
 if 1 < 2:
     print('Yep!')
@@ -18,27 +18,27 @@ if 1 < 2:
     print('yep!')
 
 
-# If Else - Make sure to line up the else with the if statement to "connect" them
+# If Else - Pastikan untuk mengatur else dengan pernyataan if untuk "menghubungkannya"
 
 if 1 < 2:
-    print('first')
+    print('pertama')
 else:
-    print('last')
+    print('terakhir')
 
 ###
 ###
 
 if 1 > 2:
-    print('first')
+    print('pertama')
 else:
-    print('last')
+    print('terakhir')
 
 
-# To add more conditions (like else if) you just use a single phrase "elif"
+# Untuk menambahkan lebih banyak kondisi (seperti else if) Anda hanya menggunakan frase tunggal "elif"
 
 if 1 == 2:
-    print('first')
+    print('pertama')
 elif 3 == 3:
-    print('middle')
+    print('tengah')
 else:
-    print('Last')
+    print('Terakhir')

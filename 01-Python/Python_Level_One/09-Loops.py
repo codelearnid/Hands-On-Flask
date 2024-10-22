@@ -1,55 +1,52 @@
-
 ################################################################################
 ####################-----------------------------###############################
 ####################-----------LOOPS-------------###############################
 ####################-----------------------------###############################
 ################################################################################
 
-# Time to review loops with Python, such as For Loops and While loops
-# Python is unique in that is discards parenthesis and brackets in favor of a
-# whitespace system that defines blocks of code through indentation, this forces
-# the user to write readable code, which is great for future you looking back at
-# your older code later on!
+# Saatnya untuk mengulas kembali tentang loops di Python, seperti For Loops dan While loops
+# Python unik karena menghilangkan tanda kurung dan kurawal dalam favorit sistem whitespace yang
+# mendefinisikan blok kode melalui indentasi, ini memaksa pengguna untuk menulis kode yang dapat dibaca,
+# yang sangat bagus untuk Anda di masa depan saat melihat kembali kode lama Anda!
 
 #####################
 ### FOR LOOPS #######
 #####################
 
-# Use For Loops for any sequence of elements. If you try to use a for loop with
-# a mapping like a dictionary, it will still work, but it won't loop with any
-# order. Let's walk through some examples of how a for loop behaves with the
-# various data structures we've learned about!
+# Gunakan For Loops untuk setiap urutan elemen. Jika Anda mencoba menggunakan for loop dengan
+# peta seperti kamus, itu akan tetap bekerja, tetapi tidak akan berulang dengan urutan tertentu. Mari kita berjalan melalui beberapa contoh tentang bagaimana for loop berperilaku dengan
+# struktur data yang kita pelajari!
 
-## For Loop with a list
+## For Loop dengan list
 
-# Perform an action with each element
+# Lakukan tindakan dengan setiap elemen
 seq = [1,2,3,4,5]
 
 for item in seq:
     print(item)
 
 
-# Perform an action for every element but doesn't actually involve the elements
+# Lakukan tindakan untuk setiap elemen tetapi tidak benar-benar melibatkan elemen-elemen tersebut
 for item in seq:
     print('Yep')
 
 
-# You can call the loop variable whatever you want:
+# Anda dapat memanggil variabel loop apa pun yang Anda inginkan:
 for jelly in seq:
     print(jelly+jelly)
 
-## For Loop with a Dictionary
+## For Loop dengan Dictionary
 ages = {"Sam":3,"Frank":4,"Dan":29}
 
 for key in ages:
-    print("This is the key")
+    print("Ini adalah kunci")
     print(key)
-    print("This is the value")
+    print("Ini adalah nilai")
     print(ages[key])
     print("\n")
 
-# A list of tuple pairs is a very common format for functions to return data in
-# Because it is so common we can use tuple un-packing to deal with this, example:
+# Sebuah daftar pasangan tuple adalah format yang sangat umum untuk fungsi mengembalikan data dalam
+# Karena itu sangat umum kita dapat menggunakan un-packing tuple untuk menangani ini, contoh:
 
 mypairs = [(1,10),(3,30),(5,50)]
 
@@ -66,22 +63,22 @@ for item1,item2 in mypairs:
 ### WHILE LOOPS #######
 #######################
 
-# While loops allow us to continually perform and action until a condition
-# becomes true. For example:
+# While loops memungkinkan kita untuk terus melakukan tindakan hingga kondisi
+# menjadi benar. Contoh:
 
 i = 1
 while i < 5:
-    print('i is: {}'.format(i))
+    print('i adalah: {}'.format(i))
     i = i+1
 
 #####################
 ### OTHER TOPICS ####
 #####################
 
-# RANGE FUNCTION
-# range() can quickly generate integers for you, based on a starting and ending point
+# FUNGSI RANGE
+# range() dapat dengan cepat menghasilkan bilangan bulat untuk Anda, berdasarkan titik awal dan akhir
 
-# Note that its a generator:
+# Catatan bahwa itu adalah generator:
 range(5)
 
 list(range(5))
@@ -89,8 +86,8 @@ list(range(5))
 for i in range(5):
     print(i)
 
-# Start and ending
+# Awal dan akhir
 range(1,10)
 
-# Third argument for step-size
+# Argument ketiga untuk ukuran langkah
 range(0,10,2)

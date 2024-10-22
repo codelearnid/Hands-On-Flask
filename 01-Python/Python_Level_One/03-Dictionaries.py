@@ -2,125 +2,101 @@
 ### Dictionaries ###
 ####################
 
-# We've been learning about sequences in Python but now we're going to switch
-# gears and learn about "mappings' in Python. If you're familiar with other
-# languages you can think of these Dictionaries as hash tables (objects in Javascript).
+# Kami telah belajar tentang urutan dalam Python, tetapi sekarang kita akan beralih
+# ke "pemetaan" dalam Python. Jika Anda familiar dengan bahasa lain, Anda dapat berpikir tentang Dictionaries ini sebagai tabel hash (objek dalam Javascript).
 #
-# This section will serve as a brief introduction to dictionaries and consist of:
+# Bagian ini akan berfungsi sebagai pengenalan singkat tentang dictionaries dan terdiri dari:
 #
-#     1.) Constructing a Dictionary
-#     2.) Accessing objects from a dictionary
-#     3.) Nesting Dictionaries
-#     4.) Basic Dictionary Methods
+#     1.) Membangun Dictionaries
+#     2.) Mengakses objek dari dictionaries
+#     3.) Menggabungkan Dictionaries
+#     4.) Metode Dictionaries Dasar
 #
-# So what are mappings? Mappings are a collection of objects that are stored by
-# a key, unlike a sequence that stored objects by their relative position.
-# This is an important distinction, since mappings won't retain order since they
-# have objects defined by a key.
+# Jadi apa itu pemetaan? Pemetaan adalah koleksi objek yang disimpan oleh
+# kunci, tidak seperti urutan yang menyimpan objek berdasarkan posisi relatifnya.
+# Ini adalah perbedaan penting, karena pemetaan tidak akan mempertahankan urutan karena mereka
+# memiliki objek yang didefinisikan oleh kunci.
 #
-# A Python dictionary consists of a key and then an associated value. That value
-# can be almost any Python object.
+# Dictionaries Python terdiri dari kunci dan kemudian nilai yang terkait. Nilai itu
+# dapat hampir semua objek Python.
 #
 #
-# Constructing a Dictionary
-# Let's see how we can construct dictionaries to get a better understanding of how they work!
+# Membangun Dictionaries
+# Mari kita lihat bagaimana kita dapat membangun dictionaries untuk mendapatkan pemahaman yang lebih baik tentang bagaimana mereka bekerja!
 
-# Make a dictionary with {} and : to signify a key and a value
+# Buat dictionaries dengan {} dan : untuk menandai kunci dan nilai
 my_dict = {'key1':'value1','key2':'value2'}
 
-# Call values by their key
+# Panggil nilai dengan kuncinya
 my_dict['key2']
 
-
-# Its important to note that dictionaries are very flexible in the data types
-# they can hold. For example:
+# Penting untuk dicatat bahwa dictionaries sangat fleksibel dalam tipe data
+# yang mereka pegang. Contoh:
 
 my_dict = {'key1':123,'key2':[12,23,33],'key3':['item0','item1','item2']}
 
-#Lets call items from the dictionary
+# Mari panggil item dari dictionaries
 my_dict['key3']
 
-# Can call an index on that value
+# Dapat memanggil indeks pada nilai itu
 my_dict['key3'][0]
 
-#Can then even call methods on that value
+#Dapat bahkan memanggil metode pada nilai itu
 my_dict['key3'][0].upper()
 
-# We can effect the values of a key as well. For instance:
+# Kita juga dapat mempengaruhi nilai kunci. Contoh:
 my_dict['key1']
 
-# Subtract 123 from the value
+# Kurangi 123 dari nilai
 my_dict['key1'] = my_dict['key1'] - 123
 
-#Check
+# Periksa
 my_dict['key1']
 
+# Catatan cepat, Python memiliki metode bawaan untuk melakukan pengurangan atau
+# penambahan sendiri (atau perkalian atau pembagian). Kita juga bisa menggunakan += atau -= untuk
+# pernyataan di atas. Contoh:
 
-# A quick note, Python has a built-in method of doing a self subtraction or
-# addition (or multiplication or division). We could have also used += or -= for
-# the above statement. For example:
-
-# Set the object equal to itself minus 123
+# Tetapkan objek sama dengan dirinya sendiri minus 123
 my_dict['key1'] -= 123
 my_dict['key1']
 
 print(my_dict)
-# We can also create keys by assignment. For instance if we started off with an
-# empty dictionary, we could continually add to it:
+# Kita juga dapat membuat kunci dengan penugasan. Contoh, jika kita mulai dengan
+# dictionaries kosong, kita dapat terus menambahkannya:
 
-# Create a new dictionary
+# Buat dictionaries baru
 d = {}
 
-# Create a new key through assignment
+# Buat kunci baru melalui penugasan
 d['animal'] = 'Dog'
 
-# Can do this with any object
+# Dapat melakukan ini dengan objek apa pun
 d['answer'] = 42
 
-#Show
+# Tampilkan
 print(d)
 
 
 ###############################
-# Nesting with Dictionaries ###
+# Menggabungkan dengan Dictionaries ###
 ###############################
 
-# Hopefully your starting to see how powerful Python is with its flexibility of
-# nesting objects and calling methods on them. Let's see a dictionary nested
-# inside a dictionary:
+# Semoga Anda mulai melihat betapa kuatnya Python dengan fleksibilitasnya dalam
+# menggabungkan objek dan memanggil metode pada mereka. Mari kita lihat dictionaries yang
+# digabungkan di dalam dictionaries yang digabungkan di dalam dictionaries lainnya:
 
-# Dictionary nested inside a dictionary nested in side a dictionary
+# Dictionaries yang digabungkan di dalam dictionaries yang digabungkan di dalam dictionaries lainnya
 d = {'key1':{'nestkey':{'subnestkey':'value'}}}
 
 
-# Wow! Thats a quite the inception of dictionaries!
-# Let's see how we can grab that value:
+# Wow! Itu adalah penggabungan yang sangat dalam dari dictionaries!
+# Mari kita lihat bagaimana kita dapat mengambil nilai itu:
 
-# Keep calling the keys
+# Terus panggil kunci-kunci itu
 d['key1']['nestkey']['subnestkey']
 
-
-##################################
-#### A few Dictionary Methods ####
-##################################
-#
-# There are a few methods we can call on a dictionary.
-# Let's get a quick introduction to a few of them:
-
-# Create a typical dictionary
-d = {'key1':1,'key2':2,'key3':3}
-
-# Method to return a list of all keys
-print(d.keys())
-
-# Method to grab all values
-print(d.values())
-
-# Method to return tuples of all items  (we'll learn about tuples soon)
-print(d.items())
-
-
-# Hopefully you now have a good basic understanding how to construct dictionaries.
-# There's a lot more to go into here, but we will revisit dictionaries at later time.
-# After this section all you need to know is how to create a dictionary and how to
-# retrieve values from it.
+# Semoga Anda sekarang memiliki pemahaman dasar yang baik tentang bagaimana membangun dictionaries.
+# Ada banyak lagi yang perlu dipelajari di sini, tetapi kita akan kembali ke dictionaries di waktu lain.
+# Setelah bagian ini, semua yang Anda perlu tahu adalah bagaimana membuat dictionaries dan bagaimana
+# mengambil nilai dari itu.
