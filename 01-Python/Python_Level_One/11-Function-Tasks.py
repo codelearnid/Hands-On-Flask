@@ -1,98 +1,88 @@
-# Function Tasks
+# Tugas Fungsi
 #
 #
-# Let's see if you can solve these word problems by creating functions.
-# The function "skeleton" has been set up for you to fill in below the problem
-# description, as well as example outputs of what the function should return
-# given certain inputs. Best of luck, some of these will be challenging!
+# Mari kita lihat apakah Anda bisa menyelesaikan masalah ini dengan membuat fungsi.
+# Fungsi "kerangka" telah disiapkan untuk Anda isi di bawah deskripsi masalah,
+# serta contoh keluaran dari apa yang fungsi harus mengembalikan
+# dengan memberikan input tertentu. Semoga berhasil, beberapa dari ini akan menantang!
 #
-# The tasks will start off easy and proceed to get harder and harder.
+# Tugas-tugas akan dimulai dengan mudah dan akan semakin sulit.
 
-# ## Task 1
+# ## Tugas 1
 #
-#  Create a function that takes in two integers and returns
-## a Boolean True if their sum is 10, False if their sum is something else.
+# Buat sebuah fungsi yang mengambil dua bilangan bulat dan mengembalikan
+## Boolean True jika jumlahnya adalah 10, False jika jumlahnya adalah yang lain.
 
-def check_ten(n1,n2):
-    # Code Here
+def cek_sepuluh(n1,n2):
+    # Kode Di Sini
     pass
 
 
-
-# ## Task 2
+# ## Tugas 2
 #
-# Create a function that takes in two integers and returns True if their
-# sum is 10, otherwise, return the actual sum value.
+# Buat sebuah fungsi yang mengambil dua bilangan bulat dan mengembalikan True jika jumlahnya
+# adalah 10, jika tidak, kembalikan nilai jumlah sebenarnya.
 
-def check_ten_sum(n1,n2):
-    # Code Here
+def cek_sepuluh_jumlah(n1,n2):
+    # Kode Di Sini
     pass
 
 
-
-# ## Task 3
+# ## Tugas 3
 #
-# Create a function that takes in a string and returns back the
-# first character of that string in upper case.
+# Buat sebuah fungsi yang mengambil sebuah string dan mengembalikan karakter pertama dari string tersebut dalam huruf besar.
 
 
 
-def first_upper(mystring):
-    # Code Here
+def pertama_besar(mystring):
+    # Kode Di Sini
 
 
-
-# ## Task 4
+# ## Tugas 4
 #
-# Create a function that takes in a string and returns the last two characters.
-# If there are less than two chracters, return the string:  "Error".
-# Use this link if you need help/hint.
+# Buat sebuah fungsi yang mengambil sebuah string dan mengembalikan dua karakter terakhir.
+# Jika ada kurang dari dua karakter, kembalikan string: "Error".
+# Gunakan tautan ini jika Anda membutuhkan bantuan/petunjuk.
 # (https://stackoverflow.com/questions/7983820/get-the-last-4-characters-of-a-string)
 
 
-
-def last_two(mystring):
-    # Code Here
+def dua_terakhir(mystring):
+    # Kode Di Sini
     pass
 
 
-# ## Task 5
+# ## Tugas 5
 #
-# Given a list of integers, return True if the sequence [1,2,3] is somewhere
-# in the list. Hint: Use slicing and a for loop.
+# Diberikan sebuah daftar bilangan bulat, kembalikan True jika urutan [1,2,3] ada di mana-mana
+# di dalam daftar. Petunjuk: Gunakan slicing dan for loop.
 
 
+def cek_urutan(nums):
 
-def seq_check(nums):
-
-    # Code here
+    # Kode di sini
 
     pass
 
-
-# ## Task 6
+# ## Tugas 6
 #
-# Given a 2 strings, create a function that returns the difference in length
-# between them. This difference in length should always be a positive number
-# (or just 0). Hint: Absolute Value.**
+# Diberikan 2 string, buat sebuah fungsi yang mengembalikan perbedaan panjang
+# di antara keduanya. Perbedaan panjang ini harus selalu menjadi angka positif
+# (atau hanya 0). Petunjuk: Nilai Mutlak.**
 
 
-
-def compare_len(s1,s2):
-    # Code Here
+def bandingkan_panjang(s1,s2):
+    # Kode Di Sini
     pass
 
 
-
-# ## Task 7
+# ## Tugas 7
 #
-# Given a list of integers, if the length of the list is an even number,
-# return the sum of the list. If the length of the list is odd, return the max
-## value in that list.
+# Diberikan sebuah daftar bilangan bulat, jika panjang daftar adalah bilangan genap,
+# kembalikan jumlah dari daftar. Jika panjang daftar adalah ganjil, kembalikan nilai maksimum
+## di dalam daftar tersebut.
 
 
+def jumlah_atau_maks(mylist):
 
-def sum_or_max(mylist):
-
-    # Code Here
+    # Kode Di Sini
     pass
